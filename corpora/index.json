@@ -1,0 +1,78 @@
+[
+  {
+    "id": "resvg-test-suite",
+    "name": "resvg independent renderer test suite",
+    "track": "diagnostic",
+    "spec": "Static SVG",
+    "source_url": "https://github.com/linebender/resvg-test-suite",
+    "source_ref": "main",
+    "license": "MIT",
+    "license_url": "https://github.com/linebender/resvg-test-suite/blob/main/LICENSE",
+    "selection": "All SVG/PNG pairs in the upstream tests directory",
+    "oracle": "Upstream reference PNG, commonly produced with resvg and Chrome and manually compared",
+    "max_mae": 5.0,
+    "max_changed_ratio": 0.02,
+    "max_content_changed_ratio": 0.15,
+    "revision": "d8e064337faf01bc5a9579187a56dbdbe3eacc72",
+    "index": "corpora/resvg-test-suite/README.md"
+  },
+  {
+    "id": "wpt-svg2-reftests",
+    "name": "WPT SVG2 static reftests",
+    "track": "conformance",
+    "spec": "SVG 2",
+    "source_url": "https://github.com/web-platform-tests/wpt",
+    "source_ref": "master",
+    "license": "BSD-3-Clause",
+    "license_url": "https://github.com/web-platform-tests/wpt/blob/master/LICENSE.md",
+    "selection": "SVG-to-SVG rel=match reftests without script, SMIL, or print behavior",
+    "oracle": "Both the test SVG and its reference SVG are rendered by the same ThorVG build",
+    "resolution": [
+      512,
+      512
+    ],
+    "max_mae": 1.0,
+    "max_changed_ratio": 0.005,
+    "max_content_changed_ratio": 0.02,
+    "revision": "17d68806f7be968ed38196f068db03fb3a5dff2a",
+    "index": "corpora/wpt-svg2-reftests/README.md"
+  },
+  {
+    "id": "w3c-svg-tiny-1.2",
+    "name": "W3C SVG Tiny 1.2 static subset",
+    "track": "advisory",
+    "spec": "SVG Tiny 1.2",
+    "source_url": "https://www.w3.org/Graphics/SVG/Test/20080912/",
+    "archive_url": "https://www.w3.org/Graphics/SVG/Test/20080912/W3C_SVG_12_TinyTestSuite.tar.gz",
+    "archive_sha256": "2203d6f44178cbb3853bdc7abe865f4e7e42506727ecc9e34b408b6f33e2e718",
+    "license": "W3C Document License (1999)",
+    "license_url": "https://www.w3.org/Consortium/Legal/1999/copyright-documents-19990405",
+    "selection": "Static tests only; animation, script, handler, and multimedia tests are excluded",
+    "oracle": "Unmodified W3C reference PNG; W3C permits label-text variation",
+    "max_mae": 5.0,
+    "max_changed_ratio": 0.02,
+    "max_content_changed_ratio": 0.15,
+    "revision": "2008-09-12 archive (sha256: 2203d6f44178)",
+    "index": "corpora/w3c-svg-tiny-1.2/README.md"
+  },
+  {
+    "id": "thorvg-regression",
+    "name": "ThorVG official SVG regression assets",
+    "track": "regression",
+    "spec": "ThorVG regression",
+    "source_url": "https://github.com/thorvg/thorvg/tree/main/test/resources",
+    "license": "MIT",
+    "license_url": "https://github.com/thorvg/thorvg/blob/main/LICENSE",
+    "selection": "SVG files maintained in ThorVG test/resources",
+    "oracle": "Accepted ThorVG baseline generated with --accept-regression-baseline",
+    "resolution": [
+      512,
+      512
+    ],
+    "max_mae": 1.0,
+    "max_changed_ratio": 0.005,
+    "max_content_changed_ratio": 0.02,
+    "revision": "3b567e7660d907591c47b1141993c7a263af5245",
+    "index": "corpora/thorvg-regression/README.md"
+  }
+]

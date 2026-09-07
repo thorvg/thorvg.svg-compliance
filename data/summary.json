@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-09-07T15:17:59.695626+00:00",
+  "thorvg": {
+    "commit": "3b567e7660d907591c47b1141993c7a263af5245",
+    "version": "3b567e76",
+    "dirty": false,
+    "commit_url": "https://github.com/thorvg/thorvg/commit/3b567e7660d907591c47b1141993c7a263af5245",
+    "cli_tools_commit": "8e45bdf62a3c5f4aac575b34ead329ed7d36abb9"
+  },
+  "comparison": {
+    "blur_radius": 0.6,
+    "channel_delta": 24
+  },
+  "suites": [
+    {
+      "id": "wpt-svg2-reftests",
+      "name": "WPT SVG2 static reftests",
+      "track": "conformance",
+      "spec": "SVG 2",
+      "total": 251,
+      "pass": 135,
+      "fail": 116,
+      "index": "corpora/wpt-svg2-reftests/README.md",
+      "revision": "17d68806f7be968ed38196f068db03fb3a5dff2a"
+    },
+    {
+      "id": "w3c-svg-tiny-1.2",
+      "name": "W3C SVG Tiny 1.2 static subset",
+      "track": "advisory",
+      "spec": "SVG Tiny 1.2",
+      "total": 207,
+      "pass": 0,
+      "fail": 207,
+      "index": "corpora/w3c-svg-tiny-1.2/README.md",
+      "revision": "2008-09-12 archive (sha256: 2203d6f44178)"
+    },
+    {
+      "id": "resvg-test-suite",
+      "name": "resvg independent renderer test suite",
+      "track": "diagnostic",
+      "spec": "Static SVG",
+      "total": 1679,
+      "pass": 626,
+      "fail": 1053,
+      "index": "corpora/resvg-test-suite/README.md",
+      "revision": "d8e064337faf01bc5a9579187a56dbdbe3eacc72"
+    },
+    {
+      "id": "thorvg-regression",
+      "name": "ThorVG official SVG regression assets",
+      "track": "regression",
+      "spec": "ThorVG regression",
+      "total": 5,
+      "pass": 5,
+      "fail": 0,
+      "index": "corpora/thorvg-regression/README.md",
+      "revision": "3b567e7660d907591c47b1141993c7a263af5245"
+    }
+  ]
+}

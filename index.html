@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ThorVG SVG conformance, advisory, diagnostic, and regression results">
+  <title>ThorVG SVG compatibility report</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>ThorVG SVG compatibility</h1>
+    <p id="baseline">Loading baseline…</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="suite-title">
+      <h2 id="suite-title">Test sets</h2>
+      <div id="suites" class="suite-grid" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="result-title">
+      <div class="section-heading">
+        <div><h2 id="result-title">Indexed SVG results</h2><p id="match-count"></p></div>
+        <button id="reset" type="button">Reset filters</button>
+      </div>
+      <form class="filters" role="search" onsubmit="return false">
+        <label>Search<input id="search" type="search" placeholder="path, title, feature…"></label>
+        <label>Set<select id="suite-filter"><option value="">All sets</option></select></label>
+        <label>Status<select id="status-filter"><option value="">All statuses</option></select></label>
+        <label>Element<select id="element-filter"><option value="">All elements</option></select></label>
+        <label>Issue<select id="issue-filter"><option value="">All issue types</option></select></label>
+      </form>
+      <div id="results" class="result-grid" aria-live="polite"></div>
+      <button id="more" class="more" type="button" hidden>Show more</button>
+    </section>
+  </main>
+
+  <template id="card-template">
+    <article class="card">
+      <div class="card-heading"><div><p class="suite-name"></p><h3></h3></div><span class="status"></span></div>
+      <p class="description"></p>
+      <p class="tags"></p>
+      <div class="images">
+        <figure><a class="reference-link"><img class="reference" loading="lazy" alt="Reference rendering"></a><figcaption>Reference</figcaption></figure>
+        <figure><a class="rendered-link"><img class="rendered" loading="lazy" alt="ThorVG rendering"></a><figcaption>ThorVG</figcaption></figure>
+        <figure><a class="diff-link"><img class="diff" loading="lazy" alt="Pixel difference"></a><figcaption>AA-tolerant diff</figcaption></figure>
+      </div>
+      <p class="metrics"></p>
+      <div class="actions"><a class="open-source" target="_blank" rel="noopener">Open SVG</a><a class="download-source" download>Download</a><button class="copy-source" type="button">Copy SVG</button><a class="upstream" target="_blank" rel="noopener">Upstream</a></div>
+    </article>
+  </template>
+</body>
+</html>
