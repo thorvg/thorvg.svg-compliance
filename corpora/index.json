@@ -34,7 +34,7 @@
     "max_mae": 1.0,
     "max_changed_ratio": 0.005,
     "max_content_changed_ratio": 0.02,
-    "revision": "17d68806f7be968ed38196f068db03fb3a5dff2a",
+    "revision": "4493b11027761c7ff43352df94105dc9075e35d0",
     "index": "corpora/wpt-svg2-reftests/README.md"
   },
   {
@@ -72,7 +72,7 @@
     "max_mae": 1.0,
     "max_changed_ratio": 0.005,
     "max_content_changed_ratio": 0.02,
-    "revision": "3b567e7660d907591c47b1141993c7a263af5245",
+    "revision": "a3a2b79ffef74d825e677998ef7c4cba8b55881e",
     "index": "corpora/thorvg-regression/README.md"
   }
 ]

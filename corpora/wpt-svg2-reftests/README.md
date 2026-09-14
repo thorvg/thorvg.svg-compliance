@@ -4,7 +4,7 @@
 - Specification/profile: SVG 2
 - Indexed tests: 251
 - Upstream: https://github.com/web-platform-tests/wpt
-- Upstream revision: `17d68806f7be968ed38196f068db03fb3a5dff2a`
+- Upstream revision: `4493b11027761c7ff43352df94105dc9075e35d0`
 - License: [BSD-3-Clause](https://github.com/web-platform-tests/wpt/blob/master/LICENSE.md)
 - Selection: SVG-to-SVG rel=match reftests without script, SMIL, or print behavior
 - Reference oracle: Both the test SVG and its reference SVG are rendered by the same ThorVG build

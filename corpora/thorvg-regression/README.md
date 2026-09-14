@@ -4,7 +4,7 @@
 - Specification/profile: ThorVG regression
 - Indexed tests: 5
 - Upstream: https://github.com/thorvg/thorvg/tree/main/test/resources
-- Upstream revision: `3b567e7660d907591c47b1141993c7a263af5245`
+- Upstream revision: `a3a2b79ffef74d825e677998ef7c4cba8b55881e`
 - License: [MIT](https://github.com/thorvg/thorvg/blob/main/LICENSE)
 - Selection: SVG files maintained in ThorVG test/resources
 - Reference oracle: Accepted ThorVG baseline generated with --accept-regression-baseline
