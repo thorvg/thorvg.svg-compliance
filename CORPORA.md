@@ -13,7 +13,7 @@ This is the human-readable index for every vendored test set. The full machine i
 ## Selection and reference policy
 
 - **WPT** is the primary conformance track. Only static SVG-to-SVG equality reftests are indexed. Test and reference are rendered by the same ThorVG commit.
-- **W3C SVG Tiny 1.2** is advisory. The 207 static files are copied unmodified; animation, script, handler, and multimedia files are excluded. W3C permits label-text variation; this report compares all selected files against the reference PNGs.
+- **W3C SVG Tiny 1.2** is advisory. Animation, script, handler, and multimedia files are excluded. Only the Revision text element is removed from all 207 selected SVGs before generating both Chrome baselines and ThorVG output. The entire image is compared, including content behind the former label; no rectangle is masked or cropped.
 - **resvg-test-suite** is diagnostic rather than normative. Its upstream PNGs are useful cross-renderer references. Font-sensitive and undefined-behavior cases use the same visual thresholds as other tests.
 - **Chrome/Skia overrides:** Cases listed in [`baselines/index.json`](baselines/index.json) use the versioned Chrome test PNG instead of the default reference above. These snapshots measure browser compatibility, including formerly undefined cases; they are not normative SVG references. See [`baselines/README.md`](baselines/README.md) for the renderer and capture conditions.
 
@@ -23,4 +23,4 @@ Both images are composited on white and blurred by 0.6 px before comparison. Pix
 
 ## Licensing
 
-Each corpus directory contains the upstream license/notice. The W3C files remain unmodified because the applicable W3C Document License does not grant a general right to create derivatives. Bundled resvg fonts retain their individual license files.
+Each corpus directory contains the upstream license/notice. Bundled resvg fonts retain their individual license files.

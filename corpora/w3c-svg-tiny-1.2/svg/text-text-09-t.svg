@@ -42,8 +42,6 @@
     <text x="10 30 50 70 90 110 130 150" y="300 290 280 270 260 250 240 230" rotate="0 -10 -20 -30 -40 -50 -60 -70 -80 -90" font-size="35">Both Together</text>
   </g>
   <g font-family="SVGFreeSansASCII,sans-serif" font-size="32">
-    <text xml:id="revision" x="10" y="340" stroke="none"
-      fill="black">$Revision: 1.6 $</text>
   </g>
   <rect xml:id="test-frame" x="1" y="1" width="478" height="358" fill="none" stroke="#000"/>
   <!-- comment out this watermark once the test is approved -->

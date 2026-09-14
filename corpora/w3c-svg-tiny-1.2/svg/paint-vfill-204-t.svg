@@ -37,8 +37,6 @@
     <image xlink:href="../images/viewport-fill-img.png" x="64" y="64" width="104" height="112" viewport-fill="inherit" viewport-fill-opacity="1.0"/>
   </g>
   <g font-family="SVGFreeSansASCII,sans-serif" font-size="32">
-    <text xml:id="revision" x="10" y="340" stroke="none"
-      fill="black">$Revision: 1.6 $</text>
   </g>
   <rect xml:id="test-frame" x="1" y="1" width="478" height="358" fill="none" stroke="#000"/>
   <!-- comment out this watermark once the test is approved -->

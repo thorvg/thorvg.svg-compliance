@@ -19,6 +19,20 @@ SPEC.loader.exec_module(update)
 
 
 class UpdateTest(unittest.TestCase):
+    def test_remove_only_w3c_revision_text(self):
+        # Keep overlapping geometry, unrelated text, namespaces and CRLF intact.
+        before = b'<svg xmlns="http://www.w3.org/2000/svg">\r\n<path d="M0 320L480 340"/>\r\n'
+        after = b'<text id="other">$Revision: keep this $</text></svg>'
+        for attribute in (b'xml:id="revision"', b"id = 'revision'"):
+            label = b'<text x="10" ' + attribute + b' y="340">\r\n$Revision: 1.5 $</text>\r\n'
+            result = update.without_w3c_revision(before + label + after)
+            self.assertEqual(result, before + after)
+            self.assertEqual(update.without_w3c_revision(result), result)
+            for encoding in ("utf-16-le", "utf-16-be"):
+                original = ("\ufeff" + (before + label + after).decode()).encode(encoding)
+                expected = ("\ufeff" + (before + after).decode()).encode(encoding)
+                self.assertEqual(update.without_w3c_revision(original), expected)
+
     def test_chrome_baseline_survives_reference_rendering_and_rejects_stale_sources(self):
         suite = next(s for s in update.CONFIG["suites"] if s["id"] == "wpt-svg2-reftests")
         with tempfile.TemporaryDirectory() as directory:

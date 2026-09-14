@@ -75,7 +75,7 @@ Other options:
 | Test suite | Track | Compared against |
 |------------|-------|------------------|
 | WPT static SVG reftests | Conformance | Reference SVGs rendered by the same ThorVG build |
-| W3C SVG Tiny 1.2 static subset | Advisory | W3C reference PNGs |
+| W3C SVG Tiny 1.2 static subset | Advisory | Chrome/Skia output from SVGs with only the Revision text element removed |
 | resvg-test-suite | Diagnostic | Upstream reference PNGs |
 
 `PASS` means the rendering meets the suite's visual thresholds. `FAIL` means a

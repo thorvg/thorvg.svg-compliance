@@ -1349,843 +1349,843 @@
     },
     "w3c-svg-tiny-1.2/coords-constr-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-constr-201-t.skia-4f574af24448.png",
-      "source_sha256": "52f2885935e8e4fb0d17b99228d4d8ca70c4d09152a49db1427a1d36a879ce34"
+      "source_sha256": "af7ccf9d7a0b28dfc70bce66667b8c4f138fcce798d60b9cf76cd79b1e7aae44"
     },
     "w3c-svg-tiny-1.2/coords-coord-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-coord-01-t.skia-4f574af24448.png",
-      "source_sha256": "f29f377081ffd322d2d70dcda2988f01274c1cdc2b79c359de36db2f39240535"
+      "source_sha256": "21025838f1f6cc78d3d77d5b589f211afce44dc90b1aa9eaf76a0d8c378fe60c"
     },
     "w3c-svg-tiny-1.2/coords-trans-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-trans-01-t.skia-4f574af24448.png",
-      "source_sha256": "20e683ceb87a5a0bb77c0513626f1451ef568cd133ff32bdc92abbbaba89c6d2"
+      "source_sha256": "f7aecf8faa83a9c27c60f22e79c97b3d241bc55a7f776c6b30c5ea285f0ec209"
     },
     "w3c-svg-tiny-1.2/coords-trans-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-trans-02-t.skia-4f574af24448.png",
-      "source_sha256": "e303a29dd2135d1d627f91e7e0a3df453cf0e0bf2be5342b87b3e609442b9814"
+      "source_sha256": "91657751da51e8092327a86ab4a1ee2ed9006ecd6823d9216b0641c51d4c8c41"
     },
     "w3c-svg-tiny-1.2/coords-trans-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-trans-03-t.skia-4f574af24448.png",
-      "source_sha256": "063a086190ec4587d0c9525fe2ee9c2ce11306d76f552833b034f0aa17af5035"
+      "source_sha256": "61625dc7822669fc5697a69478d7b62d9af5996cab2acf5bacea9d21a724c8e2"
     },
     "w3c-svg-tiny-1.2/coords-trans-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-trans-04-t.skia-4f574af24448.png",
-      "source_sha256": "04afdf3ce26497d4a6e7e6eb74e26bb27338798cc894889a679aaaebacb5d655"
+      "source_sha256": "f7aecfe17404f99089ef62ee1b8f9a40b8f7bd2408abd5563da5d1567a7b77cf"
     },
     "w3c-svg-tiny-1.2/coords-trans-05-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-trans-05-t.skia-4f574af24448.png",
-      "source_sha256": "cf1eb6c3d94075c20c50e2e732624bd5cffc24e040d22748fc11d7f5f699a3a0"
+      "source_sha256": "dc9f0bde582cc58d2bb69954f804f448b07ba1ea5116ccfe8bd0e30ec84e2d08"
     },
     "w3c-svg-tiny-1.2/coords-trans-06-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-trans-06-t.skia-4f574af24448.png",
-      "source_sha256": "d65293697e8cb78f3060e394e374aeb0159874446b985668ec4a5466f7a699eb"
+      "source_sha256": "6d804207d9cc256a822f2f5d8cbe1ee910b4fe36a75da0fe3a0c63d5a8352567"
     },
     "w3c-svg-tiny-1.2/coords-trans-07-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-trans-07-t.skia-4f574af24448.png",
-      "source_sha256": "850a39bd37e51a802a6d4cc5342a7e641a082e80e29edfd8c0849e65ae586537"
+      "source_sha256": "4ac6b9eee7b76b2980b38f201b4684a745860a839734ef263c85f9cf348e83d7"
     },
     "w3c-svg-tiny-1.2/coords-trans-08-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-trans-08-t.skia-4f574af24448.png",
-      "source_sha256": "e57636e5b6034349d709c00f24643d190114f94b49f197dc1b910b6c8f568bea"
+      "source_sha256": "49f9c5eb57ab435f089d6d5283293b663b0debcd29374af4d7c0aa06523682b3"
     },
     "w3c-svg-tiny-1.2/coords-trans-09-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-trans-09-t.skia-4f574af24448.png",
-      "source_sha256": "f2c7ddb576a2c0c4d806833cd42223403d566619ab67a8c44fa688869ecd1ceb"
+      "source_sha256": "67dfc4de07876154bda412c05f2dbcc01ef20660f9ab278cc0d33095e5f1c383"
     },
     "w3c-svg-tiny-1.2/coords-units-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-units-01-t.skia-4f574af24448.png",
-      "source_sha256": "3a3300558630b0b5c7a8e426581e0419c71bb6e441ad5708b147250d3b9db78c"
+      "source_sha256": "8fe7221b9f6100cf1872af3996221812b5eaafdfd56a797b54676bac30f8474e"
     },
     "w3c-svg-tiny-1.2/coords-viewattr-05-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/coords-viewattr-05-t.skia-4f574af24448.png",
-      "source_sha256": "ad9e7dd3b912104bc17a6a7e632bba661c002eff90040e045aebfbfacb21f6a4"
+      "source_sha256": "98649bed12352622ddbd1ecf9323e9798cd4783027f0cebca2bd9774032033fd"
     },
     "w3c-svg-tiny-1.2/fonts-desc-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-desc-02-t.skia-4f574af24448.png",
-      "source_sha256": "f8f6f6b707d01b8bd7801af90bb586d733d085d080a520b8109e671802332b0f"
+      "source_sha256": "db5cf4c0142a251cc565c6216b18f252ed4f9fbccf0c85c60d5c107e0e331408"
     },
     "w3c-svg-tiny-1.2/fonts-elem-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-elem-01-t.skia-4f574af24448.png",
-      "source_sha256": "edcd9b7054b8e5996e3d853c5fab1e60548433fc1b6dc9d6d161d53dc93344a5"
+      "source_sha256": "73e03459358a36c8072c26d5a9649610b423c54b70fd434d25d5e3485f2347c6"
     },
     "w3c-svg-tiny-1.2/fonts-elem-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-elem-02-t.skia-4f574af24448.png",
-      "source_sha256": "1993c0c9ddb979d2e49a93de96023391550f27dedb1c1ea247b28fdaaf2aaf8d"
+      "source_sha256": "10d542203b9ecb70659b6f6f3df1e1c9e3e31df9dcacf7415e15bdfef4c77706"
     },
     "w3c-svg-tiny-1.2/fonts-elem-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-elem-03-t.skia-4f574af24448.png",
-      "source_sha256": "280e9149754ec356db5fc1c69e47518befddacabdbf7de7e39de46f1f6ca6887"
+      "source_sha256": "1e49a6007dc49ce275b3b0e8dbec60f987c56285870a80beb1e52b05bd4e3f84"
     },
     "w3c-svg-tiny-1.2/fonts-elem-06-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-elem-06-t.skia-4f574af24448.png",
-      "source_sha256": "52debc39a2cdad05c41e3dfac6ce7ba0f36bdf719789cdd5dabc97dc8aff5012"
+      "source_sha256": "a5334892ae49a0c6afc6099e65a9d321b0b06807227398eba16c960ab0f7357d"
     },
     "w3c-svg-tiny-1.2/fonts-glyph-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-glyph-02-t.skia-4f574af24448.png",
-      "source_sha256": "6e62e0f979b138238c62507487206f2a1eb7d50eb1e483c8376b52b7f370ee9e"
+      "source_sha256": "4616a070e84abaa257053460a22e56fe488c51772eb1e42b397e692c50bb1aa7"
     },
     "w3c-svg-tiny-1.2/fonts-glyph-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-glyph-03-t.skia-4f574af24448.png",
-      "source_sha256": "87404815fa304764e72db6ee6cc39a461fa8a8e7d88f3225969df691a300d4ac"
+      "source_sha256": "49f7d226b7c2993a5a2c126ff3db8d6e232b7e33618b3002c886c72bcc247ddb"
     },
     "w3c-svg-tiny-1.2/fonts-glyph-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-glyph-04-t.skia-4f574af24448.png",
-      "source_sha256": "c3f281a2b8fee46c9af2986c9ea39c5b76e6f6a1172d65fe535592d04e328160"
+      "source_sha256": "9ec11553aa3336fa5829f866c3f8c8df39049f491cedb3af08311c124bf1f128"
     },
     "w3c-svg-tiny-1.2/fonts-glyph-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-glyph-201-t.skia-4f574af24448.png",
-      "source_sha256": "fb81cbaf3680554b23abf44fa40acd2b8bebf01bfc81fe1d6b8db72c5fdbcbde"
+      "source_sha256": "9900d53e81b86017979c91b17b496458742c6a282d584b3e90c5edda6e0f75ed"
     },
     "w3c-svg-tiny-1.2/fonts-glyph-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-glyph-202-t.skia-4f574af24448.png",
-      "source_sha256": "a3ef8b2f5616848a278f0be7a28fdb0033401bc1de670dae475b1f888f181394"
+      "source_sha256": "c59c30fc1fb003ae94f91a70fb52395cd0ed73673fba131530415f8dcaee86e4"
     },
     "w3c-svg-tiny-1.2/fonts-glyph-203-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-glyph-203-t.skia-4f574af24448.png",
-      "source_sha256": "db9f4236f8d3a6a38c3929805b558a4f53938509a24940b030caa7c5baaa01be"
+      "source_sha256": "92bd465fc358f7cd34cf4dd59ba7ba85a47f3d785eab81401d0c05d72222dca9"
     },
     "w3c-svg-tiny-1.2/fonts-kern-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-kern-01-t.skia-4f574af24448.png",
-      "source_sha256": "adb160d812b9ce5f14f5a8e05bb1c767c16ebd16bcf00506b7603de6fc0a3b07"
+      "source_sha256": "c8acf8baa73fb951dc1f13ccb53acaf7624b6614120406bfeb5bfb6d8c9fac14"
     },
     "w3c-svg-tiny-1.2/fonts-overview-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/fonts-overview-201-t.skia-4f574af24448.png",
-      "source_sha256": "3a859b47964ef3f4d7c31aae7daf9efedae53a73fb7fa5065d24871fffa71bc7"
+      "source_sha256": "9b391faae1763214a5a4843f1a3c250e2e2ecc6cd2fbfe5f9b19f2ea45385c4d"
     },
     "w3c-svg-tiny-1.2/interact-focus-212-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/interact-focus-212-t.skia-4f574af24448.unsuitable.png",
-      "source_sha256": "4a2f4f4fdc8d67103fca9910e616094e865158a8b70a5b4e91e74c9f38677c96",
+      "source_sha256": "54a7d487b883c48a61f4d1b23dc75446fa7dea31b347631f5211cfdca72b8d70",
       "suitability": "unsuitable",
       "reason": "Required resource images/earth.jpg returns HTTP 404."
     },
     "w3c-svg-tiny-1.2/interact-zoom-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/interact-zoom-01-t.skia-4f574af24448.png",
-      "source_sha256": "be1e24998598fd88ef036e26565a77eac1087665bc65b6103009b5889327bc71"
+      "source_sha256": "aff3c1a1162d4024474ffd321918bad7f9a1c9df08a26e6a17bf5a153fa1781f"
     },
     "w3c-svg-tiny-1.2/interact-zoom-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/interact-zoom-02-t.skia-4f574af24448.png",
-      "source_sha256": "6ed445490e5cd2c6cea9c3d0c24716b8f1b778865fda29406ed7c1315bb1e1e9"
+      "source_sha256": "e157261db12ba6eff462a6fca0c02675f496db30dfa74db94329f2320e9e46c7"
     },
     "w3c-svg-tiny-1.2/interact-zoom-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/interact-zoom-03-t.skia-4f574af24448.png",
-      "source_sha256": "41abd4da591b1cf59327af78164be1cdd039b2a88009beb510d068e91adc185c"
+      "source_sha256": "68a068f68a4d1113515c90fa5bc9e4954ce42aa99362b1de8ed1f2ec00ad3827"
     },
     "w3c-svg-tiny-1.2/intro-compat-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/intro-compat-201-t.skia-4f574af24448.png",
-      "source_sha256": "55d460d1457e7bf011143f9e2cd871e4760dd9a76b76b5383124fdfe1737623c"
+      "source_sha256": "87e6c9e7f632f30177d7c6813d09b938b376096fafcd133e7f8537d2ff78e8d9"
     },
     "w3c-svg-tiny-1.2/jpeg-required-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/jpeg-required-201-t.skia-4f574af24448.png",
-      "source_sha256": "728a83ce7504ba88f20ccb9d4c4240caed6b10c6fd88b28c84960ca2661ea300"
+      "source_sha256": "15174b5f9566135afa0642104dd3fa5f4585223b5d0f6a47367093ab3655a906"
     },
     "w3c-svg-tiny-1.2/jpeg-required-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/jpeg-required-202-t.skia-4f574af24448.png",
-      "source_sha256": "70aba6eef6d8106d0270df9f3bc0950d1cb0a1450958c5ead143a3270dde53fa"
+      "source_sha256": "3ebe78a8f9020d891a61ac205eef4be3a0ee2187c4f17676e3871855fa4b88d6"
     },
     "w3c-svg-tiny-1.2/jpeg-required-203-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/jpeg-required-203-t.skia-4f574af24448.png",
-      "source_sha256": "35d07005dbc1503008b47941e8766e2cd8d81112f9b0b9ed4bd452d64b1f8123"
+      "source_sha256": "475fca4260737c960b18b1a0828d02767df8341b256dc822a01343018644ac43"
     },
     "w3c-svg-tiny-1.2/jpeg-required-204-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/jpeg-required-204-t.skia-4f574af24448.png",
-      "source_sha256": "6da9989da9013e9d5ca91ee61ae413cc68515fb64c8b4f68117849080b1570f6"
+      "source_sha256": "220dc4ef1e893264de8ac94dc7bd87faea9382490be2c662823bdd9c73d736ed"
     },
     "w3c-svg-tiny-1.2/jpeg-required-205-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/jpeg-required-205-t.skia-4f574af24448.png",
-      "source_sha256": "a801f439ab3987ef56d4b7e7a8cc48f881094944ccef9ecadcc30f8c7aabadcf"
+      "source_sha256": "43d81e6c0fda04befa0954d19279941bb37fc15ee7d5b3e279cc3afc63367133"
     },
     "w3c-svg-tiny-1.2/jpeg-required-206-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/jpeg-required-206-t.skia-4f574af24448.png",
-      "source_sha256": "ab2d9999b0fc611925298ca9ad57af2307b71ef9a6e477b7ddcdf0c3ebd16f26"
+      "source_sha256": "51a54c5648ca039779aabff0a735ee3bad4a746b24cea11326d96975dcff61ca"
     },
     "w3c-svg-tiny-1.2/jpeg-required-207-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/jpeg-required-207-t.skia-4f574af24448.png",
-      "source_sha256": "8acac8e479ccf7b36b54d906c9f17ba343fb77e461f26cfade35ccd426eee064"
+      "source_sha256": "0219346fbce2490f645eb3eb2e03db14d7ab427c08b27a55059c3547b670c382"
     },
     "w3c-svg-tiny-1.2/jpeg-required-208-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/jpeg-required-208-t.skia-4f574af24448.png",
-      "source_sha256": "528b56e7c27061ccbc2a5a5ce7961b6c7d32a90be5ca81db8a9a16dfe4d90614"
+      "source_sha256": "fcb4ae63dbc3b86aa2223a0ce892a044f164133378587ddb4f479a8e97b9f91e"
     },
     "w3c-svg-tiny-1.2/jpeg-required-209-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/jpeg-required-209-t.skia-4f574af24448.png",
-      "source_sha256": "2851ef4bacb43022d6ff86a8bec74f6a6f71db7f003d68b275158c5ea7167847"
+      "source_sha256": "a3deb49e38930a7c5eb950ac6ad03f80f25ef49dfb74dccb05dd4f4ef3b9e2a3"
     },
     "w3c-svg-tiny-1.2/linking-a-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/linking-a-03-t.skia-4f574af24448.png",
-      "source_sha256": "eb674fccb2a3ecf56c19973b394685b395268d88864d7972182f1afd59f7e2e6"
+      "source_sha256": "1cb55619e3239e3b69031db7390bf9c9c792ad229b98ae453accd6a631608791"
     },
     "w3c-svg-tiny-1.2/linking-a-08-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/linking-a-08-t.skia-4f574af24448.png",
-      "source_sha256": "dea8baf3b7cfc964fce545ff7766a98da15a22f8edfb3485da0d964d5698a532"
+      "source_sha256": "57c6e8b7f5a58cfac95e9e30ce8032082717b17afcf48cc81db50070e8e3827f"
     },
     "w3c-svg-tiny-1.2/linking-a-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/linking-a-201-t.skia-4f574af24448.png",
-      "source_sha256": "774167edd3e4b7d431b5098ed6f7567f1b2e2f84b11ae9e841506d378af28c5f"
+      "source_sha256": "13aa49202610aaf230959faa15322fdd3b2344569bffe29cc6e815cd75a29816"
     },
     "w3c-svg-tiny-1.2/linking-frag-203-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/linking-frag-203-t.skia-4f574af24448.png",
-      "source_sha256": "475e416afdad313d67db328f757e47b4dd80f25103e5e10ad443362f1a05ba43"
+      "source_sha256": "bd13634fec5e53a1c2cb1961bc18e2c20069c4499840f3bfb3bc7ad19ff14b54"
     },
     "w3c-svg-tiny-1.2/linking-frag-204-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/linking-frag-204-t.skia-4f574af24448.png",
-      "source_sha256": "8b1c4c1ed66843517e6f30fd7d2dbed3458a99a9a9c513f97fef863ff524f486"
+      "source_sha256": "2c68ff7b4cd4a6efe320443bef592eeefeae1ff3abac1c0e3a865aecdcea4f4e"
     },
     "w3c-svg-tiny-1.2/linking-refs-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/linking-refs-202-t.skia-4f574af24448.png",
-      "source_sha256": "aeb6db9a8d891a2bf1b58f00d164cf78c2bf31fd03e2e92af9e268c416e5a8c4",
+      "source_sha256": "fafc5186acc0febb02140cc2fe3070347e0fb1d1460f60af2cb514cafdb6ed3d",
       "suitability": "suitable",
       "reason": "All three loads completed within 30 seconds and produced identical pixels; usable for Chrome compatibility."
     },
     "w3c-svg-tiny-1.2/linking-refs-203-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/linking-refs-203-t.skia-4f574af24448.unsuitable.png",
-      "source_sha256": "f61307874194c0166d18b2ced3b12cfdbc352f6f98960b83bdb5a1c67ca1207b",
+      "source_sha256": "3b22479226c99a2ecc847166ff261f73fd766ca7a46e69d9945a0fbc22066d20",
       "suitability": "unsuitable",
       "reason": "All three attempts timed out; two diagnostic images captured after stopping loading differ."
     },
     "w3c-svg-tiny-1.2/linking-refs-204-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/linking-refs-204-t.skia-4f574af24448.png",
-      "source_sha256": "69d23d3ef3c7de219f2afcee8660072a32138ca20fcc2e71f30659278771704a"
+      "source_sha256": "feecaef60ca63709615ab546fb3d694dc60abfb41c328b315df4a0e34704f0df"
     },
     "w3c-svg-tiny-1.2/linking-refs-205-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/linking-refs-205-t.skia-4f574af24448.unsuitable.png",
-      "source_sha256": "858169b80da59c30050780813cdf9ed738487640dda1baf2cdb0a08cbd301091",
+      "source_sha256": "81ee373d9bd9e87d9bd966e5beb9da6598f86a276dd66a389e3a8d171ddd18d2",
       "suitability": "unsuitable",
       "reason": "Required resource svg/svglib3.svg returns HTTP 404; one of three loads also timed out."
     },
     "w3c-svg-tiny-1.2/linking-uri-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/linking-uri-03-t.skia-4f574af24448.png",
-      "source_sha256": "9490970d1bd2dc625fe809418237d646801adced86033615a17a4773f9ad54be"
+      "source_sha256": "8a1a4e4af49ba13c794c9984b27af0b6567b0e628ef7dd43baf9c4aecaba2a03"
     },
     "w3c-svg-tiny-1.2/metadata-example-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/metadata-example-01-t.skia-4f574af24448.png",
-      "source_sha256": "93efc1a2a99dbe2eaf19161399d9280d5f7282b784f41c2e86456ce1e33c9efe"
+      "source_sha256": "309921f77a176086a3a3141ce5354e8fa59f44dfc2702e6974b663f1c4b00c22"
     },
     "w3c-svg-tiny-1.2/paint-color-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-color-01-t.skia-4f574af24448.png",
-      "source_sha256": "31a0c394b728ed71ae3f128819fd0692af451cc610f6ab1deef5e671feacf44d"
+      "source_sha256": "ca9a732e3d7b96cd04249f769978cc25f0bc160ce6d6023d0ea9edfefd7a3149"
     },
     "w3c-svg-tiny-1.2/paint-color-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-color-03-t.skia-4f574af24448.png",
-      "source_sha256": "9f4f26da75700401bb5ed573f5e522e882373f5b854e0cd5fc521c4e147c460f"
+      "source_sha256": "f49c01d74e2bad9bb239ca663abe7d46ce4c59472a5131b2ec0730ab80993aae"
     },
     "w3c-svg-tiny-1.2/paint-color-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-color-04-t.skia-4f574af24448.png",
-      "source_sha256": "12ca1be3e3f7f76e79db5030091b22f80725c0351f564aaa53360bc109c357f6"
+      "source_sha256": "f1d457e520a5cc590bd058c763f99b4dcc541b97f7af192dd3443dc319e48733"
     },
     "w3c-svg-tiny-1.2/paint-color-05-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-color-05-t.skia-4f574af24448.png",
-      "source_sha256": "23215cc58a06def7aa0aaab3b08f9a93a01587f0a6e1998b3f6501a4b16036b2"
+      "source_sha256": "f072a764fda625fc851ac9a6556ab40bc0f175ab8801273259671d0f81383f83"
     },
     "w3c-svg-tiny-1.2/paint-color-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-color-201-t.skia-4f574af24448.png",
-      "source_sha256": "aa9f4f01ff72b9bb9143314984feed45bc80580bed00a1d2ec653aad27133d5b"
+      "source_sha256": "0bbfc84598c5150d53989c9002654ae736e1bef7aa5c59c6bd74fc20ef108d01"
     },
     "w3c-svg-tiny-1.2/paint-fill-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-fill-01-t.skia-4f574af24448.png",
-      "source_sha256": "dc92d5f38f8b3561c20f0b12848e59419808a3fb13c2daf0fe30478429ba8290"
+      "source_sha256": "f369f01814c97269a3cd4a3d24ae1b24ae6c247c5e0b7ac2fe3b35d892a516d7"
     },
     "w3c-svg-tiny-1.2/paint-fill-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-fill-02-t.skia-4f574af24448.png",
-      "source_sha256": "fe0ad22aa5188a892a256e0dfee61e1cff2aaf3d48ab03b3d91b708c9900f9d5"
+      "source_sha256": "ecb2c0fd4da11fbf2177a358f843710141727cf3ad797633beba5cac0113279d"
     },
     "w3c-svg-tiny-1.2/paint-fill-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-fill-03-t.skia-4f574af24448.png",
-      "source_sha256": "55290fdfd90935a48813710250713d099da598dd75c21eeeb3fe4bf5d1e74c08"
+      "source_sha256": "f53bf5b2523f06f8f24b27a04cbeeb50d2c2d2d638f8f9f5abf2d77ce1ab9900"
     },
     "w3c-svg-tiny-1.2/paint-fill-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-fill-04-t.skia-4f574af24448.png",
-      "source_sha256": "a1bcdb0b70858e346a9a0cf07c5a40fe43ccfd9930ea545cc3ead8fd57fd6ba1"
+      "source_sha256": "fc5059df4fe85257e5e42b8d5ed65e3c7eb38c695ee3ad195f317097410bb3bc"
     },
     "w3c-svg-tiny-1.2/paint-fill-05-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-fill-05-t.skia-4f574af24448.png",
-      "source_sha256": "9dcf3ad7c1bfa395951179d611421dd1b2d390c5ec76e49fd7ef45b4e2c09015"
+      "source_sha256": "8f6a46f45fb900ef8c49e6651c7b5aeeb888184f66a1f681a4bc29fec2d7a05e"
     },
     "w3c-svg-tiny-1.2/paint-grad-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-04-t.skia-4f574af24448.png",
-      "source_sha256": "7b392304a146965d2ca77256adab8a64eb3d2c2379b558393648f236f60503b1"
+      "source_sha256": "c1d108108acc88eb115a96d7e2222bd888b1a8c283e318cf7581ed43e648c826"
     },
     "w3c-svg-tiny-1.2/paint-grad-05-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-05-t.skia-4f574af24448.png",
-      "source_sha256": "89e75fae826b87112c26016635f11dc7227371f1e1f31e43e0ec91fd4a0f1471"
+      "source_sha256": "cccdadfd522738aeb7f1a76a503c44ae3ef4af38e29a36615b80ef0a7b0bae6b"
     },
     "w3c-svg-tiny-1.2/paint-grad-07-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-07-t.skia-4f574af24448.png",
-      "source_sha256": "405ff0f8dd4f3f706415d6f2d6204162ce17de4d493ca6c5f6d8ba8b0bc369bc"
+      "source_sha256": "1ed711970b034b2c847ae0cb52ff80cccffab9da287038b08909ef9820c37e2f"
     },
     "w3c-svg-tiny-1.2/paint-grad-08-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-08-t.skia-4f574af24448.png",
-      "source_sha256": "293d0dcdc963c3d0e4baeb2700f5032cf96d139d7bc74e302e7bf5c73bdf1465"
+      "source_sha256": "2c62509d88c81c4834d5820343cf6ba65e6c47092e75c71916d5e1e765b19ef9"
     },
     "w3c-svg-tiny-1.2/paint-grad-09-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-09-t.skia-4f574af24448.png",
-      "source_sha256": "500af83c85ce6f665b87cf8c3fbdae5215251de0fd3ba61a30c5d7418923ce1c"
+      "source_sha256": "8580749451936f91e33bc026e64403bc529351bbdbc6b0e921df6e454b484207"
     },
     "w3c-svg-tiny-1.2/paint-grad-11-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-11-t.skia-4f574af24448.png",
-      "source_sha256": "42ff6fe9765df03d30e0c19e37406541be0952a468d98f390d178be711b70994"
+      "source_sha256": "9f8cb02f1497259e69ca5bafed27ed0719917c6448b7c03324fa9749836810da"
     },
     "w3c-svg-tiny-1.2/paint-grad-12-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-12-t.skia-4f574af24448.png",
-      "source_sha256": "0506c326b5ad6147aad01d0755f67b96176707399b3122628eb4607bac224ead"
+      "source_sha256": "2100df72f42e56e86104977e62ff789ae3c4c40e6ccfaba96ed4504b6f6dae78"
     },
     "w3c-svg-tiny-1.2/paint-grad-15-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-15-t.skia-4f574af24448.png",
-      "source_sha256": "bcdf56df76333b07bf16d27404e5834e7671fae6e624ffbe3ecd3fa29bf9f198"
+      "source_sha256": "27bea138b85bf50b34f830b5f23ad64f0a905cc01ce9759afb3ed2a136a522fc"
     },
     "w3c-svg-tiny-1.2/paint-grad-16-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-16-t.skia-4f574af24448.png",
-      "source_sha256": "40706735ff930e9ff6cd0926ca3127b2340c818a51821bd3465e3369ab127f6c"
+      "source_sha256": "04956b9c6e32f0739121f893cac4ca8e57fb3e315e625080f5cc6227cc8c787c"
     },
     "w3c-svg-tiny-1.2/paint-grad-17-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-17-t.skia-4f574af24448.png",
-      "source_sha256": "68da8b447c245275756ada7ff3529442381ade690d1d53b06ae11a13f933b6b2"
+      "source_sha256": "3956b029f1fa719b718b13b335ea3754d74226dc9ed49749fe1875586cd24064"
     },
     "w3c-svg-tiny-1.2/paint-grad-18-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-18-t.skia-4f574af24448.png",
-      "source_sha256": "b40c769a196730327e09e931051b40a025f2bdbef69e4052d82419f42299f681"
+      "source_sha256": "27b267d1240b15d15b8834fe9e5040df9bec3e4b60d01b746c4592f5fd2d91d9"
     },
     "w3c-svg-tiny-1.2/paint-grad-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-202-t.skia-4f574af24448.png",
-      "source_sha256": "1b3f5b22c9e09dbfc5869fc7e4e75375ff9838c2789f969570c34d96ff647029"
+      "source_sha256": "6f12f2c5e8929d0bc614cac6175ef9fa8a752d6eed56d234ec7ded10661d9822"
     },
     "w3c-svg-tiny-1.2/paint-grad-203-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-203-t.skia-4f574af24448.png",
-      "source_sha256": "2c360c9d2bb9879863e5deaf08bc6c9e2667a01bb5803dffb4d131a79e4e3b43"
+      "source_sha256": "07e2b2fa58df846883b81dad4c9390f884f82064794b79b86c8c4d8f029d29c1"
     },
     "w3c-svg-tiny-1.2/paint-grad-204-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-204-t.skia-4f574af24448.png",
-      "source_sha256": "5d110230c478dea84d876896c33dd76103766d933064bce75d19ec95baa1fab6"
+      "source_sha256": "d9b168e5e1caec4160476677c3e7ba25a83244d79e7a2734b597a628416b3a40"
     },
     "w3c-svg-tiny-1.2/paint-grad-205-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-grad-205-t.skia-4f574af24448.png",
-      "source_sha256": "4b5f78c95e19ee5fa9b2ab02f143a2c91e49dedc07d434b241e4485e124ff227"
+      "source_sha256": "9774724e411de9a3fffad40a97ebe5870ddc848e36c1ba5900850062d1e6d0db"
     },
     "w3c-svg-tiny-1.2/paint-other-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-other-201-t.skia-4f574af24448.png",
-      "source_sha256": "0e90ac43ed25f7bfcde857e8a0c92ca8dbcc5381823bde0b0315a2e416aa6c20"
+      "source_sha256": "71425029cd063938da618a67ef1593da9f2f7d398878f796c448ddd695f8cc3d"
     },
     "w3c-svg-tiny-1.2/paint-stroke-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-01-t.skia-4f574af24448.png",
-      "source_sha256": "cc521af51424cbcfe2394253a968f27c4899f18f3427e304659bc7524d1b4d4b"
+      "source_sha256": "09f3e5bfc1ee085141c6144287b48d21f47dae3cd7d538860f7aada6bbb4f3b9"
     },
     "w3c-svg-tiny-1.2/paint-stroke-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-02-t.skia-4f574af24448.png",
-      "source_sha256": "0b39eb82801ebcdece36eb804ee28d4a0c3f84cc6c4a890329e75302a359a96e"
+      "source_sha256": "19ff5f82711a385f8a3860a559087ca0cfdf1c6c5021386d5694e49c8fa51ec1"
     },
     "w3c-svg-tiny-1.2/paint-stroke-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-03-t.skia-4f574af24448.png",
-      "source_sha256": "d27554f0c2c2f1c6e95d5b52624a4ea49112a27ba48a820a604c4f752223655c"
+      "source_sha256": "8bbe578898a98cf49cf3ac0a7bbe7525b505b0675ea7b196e8fb756c47d24d3c"
     },
     "w3c-svg-tiny-1.2/paint-stroke-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-04-t.skia-4f574af24448.png",
-      "source_sha256": "6a5790e91ce7d1fb9796978fb018ec94941a7c687abc9110f79134ba27548485"
+      "source_sha256": "b81bc7269e4c961f2e1f3d5ebb72a7ec98072257bd15bd652c62a7a5b2d19102"
     },
     "w3c-svg-tiny-1.2/paint-stroke-05-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-05-t.skia-4f574af24448.png",
-      "source_sha256": "d3814990f1354bb8bc5fe9c6df70eff4328c4de30f276ccfe151cbf28b256cc3"
+      "source_sha256": "bb2119b0488ed4d715642139cc48a45ba87973678f6c33589dbbdc318ac6f64b"
     },
     "w3c-svg-tiny-1.2/paint-stroke-06-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-06-t.skia-4f574af24448.png",
-      "source_sha256": "3fe54c928369b6d77066f61dcd590230150feaaf9126c8dde31ed5aab786ab53"
+      "source_sha256": "b1422a310d351aa00a8e12bc6be8b1bcc7ef2523606143f628698bc2e5599eb3"
     },
     "w3c-svg-tiny-1.2/paint-stroke-07-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-07-t.skia-4f574af24448.png",
-      "source_sha256": "dff4b1f47169f0e61bcc13440deb2a12fb8a5ccbb591fe2c3142c0073eeb8196"
+      "source_sha256": "86431606cda900f78409adae2f0856f19a037d34c2b5d9b361ef720a9bce26a3"
     },
     "w3c-svg-tiny-1.2/paint-stroke-08-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-08-t.skia-4f574af24448.png",
-      "source_sha256": "b51eb8954c26e8bf2940b287e2c2c945a1e943f66908eaf6c2ef6568463fc97b"
+      "source_sha256": "22e0b8fc876d2d7af2ac3cefe501e3840178ab5d03cc6c74cc5f792560510be5"
     },
     "w3c-svg-tiny-1.2/paint-stroke-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-202-t.skia-4f574af24448.png",
-      "source_sha256": "157db583211569731dc02923b1ae200dd03e257dabddab41e69b486b0f6e2324"
+      "source_sha256": "196a0e7d2457c57abe6554cf04d8260618f9c4ad53541b45591a88fcb3754efb"
     },
     "w3c-svg-tiny-1.2/paint-stroke-204-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-204-t.skia-4f574af24448.png",
-      "source_sha256": "fa474eb71cf6d66a37c753e3d180ba6cf2d1bb68ac258e01bcd0e4c92f783847"
+      "source_sha256": "f94e068d3b29004f3bbd21cd00dabd4aa08fed4bf1d8e6a076a9ad7b3fa94aa4"
     },
     "w3c-svg-tiny-1.2/paint-stroke-207-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-stroke-207-t.skia-4f574af24448.png",
-      "source_sha256": "f61bf1ae36a9e8c6503c34e76dedab6a4733ba8f3a72c2fbde1f8cd6bae4d8a7"
+      "source_sha256": "e0efc12bbb863321cb556cdd3655b2a4d2c1bbb5aa44144329013ecc15a7649a"
     },
     "w3c-svg-tiny-1.2/paint-vfill-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-vfill-202-t.skia-4f574af24448.png",
-      "source_sha256": "870da3afcc02c93fc81a7aeeecd9166999d7b4745bf5b6ac49c8d77468bb3e36"
+      "source_sha256": "2d05594c647f1b1535fc6e8de31b8b11d60083fa09d7a61d5cb40c373c97f82a"
     },
     "w3c-svg-tiny-1.2/paint-vfill-204-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-vfill-204-t.skia-4f574af24448.png",
-      "source_sha256": "128494172e2b8b69700f3b6f3b68dbb801c5f57c2160c3f4ebed037c76443559"
+      "source_sha256": "972ffec25ea4419c7be844844d919a9be61e736a4ba9f0d6867fa37fa31e7c65"
     },
     "w3c-svg-tiny-1.2/paint-vfill-205-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paint-vfill-205-t.skia-4f574af24448.png",
-      "source_sha256": "c350353892f65759d902ccd3276e606b82c80682d77c40d882190ee8a2f7959e"
+      "source_sha256": "5afb28a6ac1d9d2265193a8415ab10ca025e3d16a7d8028b99d7b54a5d5c56f7"
     },
     "w3c-svg-tiny-1.2/paths-data-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-01-t.skia-4f574af24448.png",
-      "source_sha256": "b7e18ad05fe1324b938586bae5fb2aabeadcec8813cf8cd61af83d6b3cc879c7"
+      "source_sha256": "645ee890d356580418b83583d9e05bed61a53aff894d1aaa4a9ac356f0040ebe"
     },
     "w3c-svg-tiny-1.2/paths-data-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-02-t.skia-4f574af24448.png",
-      "source_sha256": "eb8487cce616c3e157280e0000d5baac435c775abc7efc71bed31059deb3a738"
+      "source_sha256": "be9c936c31373fd3e3076306ef1c77550b7ade727c4c0478d9f0e68a546a1be4"
     },
     "w3c-svg-tiny-1.2/paths-data-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-04-t.skia-4f574af24448.png",
-      "source_sha256": "77fc2c5ad09bebd33bf7068018a243ad08584c27a5a20c5200fb25f28cd3b298"
+      "source_sha256": "0ad6712d75de53bf510c215940bdceed61a3fdbbc329654745fba1567a7c161e"
     },
     "w3c-svg-tiny-1.2/paths-data-05-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-05-t.skia-4f574af24448.png",
-      "source_sha256": "a72d3b4a0f986183ed772891889677dfeafa78e0c1a35cfdefc6e6eed8b1d483"
+      "source_sha256": "a001d91a53cc5d20fc4ce67b0c34e078786373e978cae487116e0f87cf0f38e3"
     },
     "w3c-svg-tiny-1.2/paths-data-06-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-06-t.skia-4f574af24448.png",
-      "source_sha256": "698f72d929479a427adf820d6d664107ee12c0fd23a2b19708af985735b88c85"
+      "source_sha256": "af4eeb1d4be5385828745b50a62f4f6b021568e5adb5b9fdb498ebde0bcc529a"
     },
     "w3c-svg-tiny-1.2/paths-data-07-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-07-t.skia-4f574af24448.png",
-      "source_sha256": "f9320948e9d632532e4c54a4956368d6c128b301dba92293b957277befec4a0d"
+      "source_sha256": "aeefedea266e1548508729fd4ed21e3cb4c49a1153f294f3015c3b820aa9f3e9"
     },
     "w3c-svg-tiny-1.2/paths-data-08-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-08-t.skia-4f574af24448.png",
-      "source_sha256": "7872b61c1a7991958ece536768e6eb44667d9aa678986c62c4a3809c354f58df"
+      "source_sha256": "9d349092b2ce81b97aa93015022eff564ae1de1b409cd32e92b29365e630a716"
     },
     "w3c-svg-tiny-1.2/paths-data-09-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-09-t.skia-4f574af24448.png",
-      "source_sha256": "de0f3d1d95cd0d3f78888f992a6d645de7b270de6fb22a81d6352d32db82fc9f"
+      "source_sha256": "c2d2f6acf76bcf3c37322c859e16f8bfac8c901bb40c88e0e75df1fda97c9437"
     },
     "w3c-svg-tiny-1.2/paths-data-10-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-10-t.skia-4f574af24448.png",
-      "source_sha256": "4332187cf212efe204c199118314da7337ce529b99126e93f780a61a27e26a26"
+      "source_sha256": "5ee58342e55c6a8b14f31fb89b6925ba7f84b747741733da1f7a59278971863e"
     },
     "w3c-svg-tiny-1.2/paths-data-12-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-12-t.skia-4f574af24448.png",
-      "source_sha256": "5bc3386e521214dae31297fb05b170a4700101c670ffcb298aaec4a9e0ec0536"
+      "source_sha256": "92921ae1a022c5375e8a22deb16b26b8c8954e1e96fec5f4549d79ae544754ac"
     },
     "w3c-svg-tiny-1.2/paths-data-13-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-13-t.skia-4f574af24448.png",
-      "source_sha256": "dc0a39e8f2662e1afd90aed0db51b41b0e45558cb193e3afebc774460bcdb39b"
+      "source_sha256": "464049f1cb80b58ea0a4f336808541b919a223b62bdf58f9b4fce330e5725c0b"
     },
     "w3c-svg-tiny-1.2/paths-data-14-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-14-t.skia-4f574af24448.png",
-      "source_sha256": "8bbcc8f45cbca159297916a27883be7adbe65912522f42d759abb765cdb962b0"
+      "source_sha256": "ea1784dab728cb0c23b20948396305d8c87efaa4d2dacc8de9e4359e125da3d7"
     },
     "w3c-svg-tiny-1.2/paths-data-15-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/paths-data-15-t.skia-4f574af24448.png",
-      "source_sha256": "b303651dda693722b35c1ed6f9d557493127977d9cb9d470a5af3590848437c8"
+      "source_sha256": "3fb2a656683ccde0c6d49269105fae585b0b7ab15dcbf9224426eb6cd38713e7"
     },
     "w3c-svg-tiny-1.2/render-elems-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/render-elems-01-t.skia-4f574af24448.png",
-      "source_sha256": "9c3612ba08ab98ec4e6f54725898fdca23c03a62c8268f5924de9b2fe5fa300f"
+      "source_sha256": "c7a16f26a4f15912c61a66cee3e78cf9c3476687c37ab7af3deea227a367cd3c"
     },
     "w3c-svg-tiny-1.2/render-elems-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/render-elems-02-t.skia-4f574af24448.png",
-      "source_sha256": "c366460d936bfcd78291ce3a1cb4e4c1ff52ffa6c287c5ac377e7af5e73b032c"
+      "source_sha256": "9904ef00d101749fcb635602ca96cf47e1f3b14d2edc8fcf0f46893bb63c0cdd"
     },
     "w3c-svg-tiny-1.2/render-elems-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/render-elems-03-t.skia-4f574af24448.png",
-      "source_sha256": "629ea8ff069cb6221e7a0ae803158548364794b6dc372ab6830ca67a0b792ad9"
+      "source_sha256": "7188c29f4f7fccf0fee397432eb66bdb3f01c1655a939f9f265de010bb0ad46e"
     },
     "w3c-svg-tiny-1.2/render-elems-06-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/render-elems-06-t.skia-4f574af24448.png",
-      "source_sha256": "30892e774a6f29feddc950be9ba6531fc64b4cc8c2e612829bd33bc12a6ace1d"
+      "source_sha256": "5075fe58be9d676d51dc22fe2cb91ad4c7b89e0281479fcf8eb905fabf71133b"
     },
     "w3c-svg-tiny-1.2/render-elems-07-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/render-elems-07-t.skia-4f574af24448.png",
-      "source_sha256": "4067ea92d01b98d887c339ae0d3d0a25870ee7249a88cb9d8b2ff63190d35558"
+      "source_sha256": "ac037809f0dddbc4e58bed525e3808ef906aff480be6af9745c9ede2d6b72be6"
     },
     "w3c-svg-tiny-1.2/render-elems-08-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/render-elems-08-t.skia-4f574af24448.png",
-      "source_sha256": "fca7bfc1a29aaa68171576ec2d3de67249d48fbbf71a4f8843ef2f02fe5b1c5d"
+      "source_sha256": "0298b90bbac63e2f4c76bc0ba8b9d1a7017abe328d0d8d6ccc421c63b708ce02"
     },
     "w3c-svg-tiny-1.2/render-groups-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/render-groups-01-t.skia-4f574af24448.png",
-      "source_sha256": "263bf374871f2760c5f0ee094a647ed60cf319ea619e06847133e0029a0e237c"
+      "source_sha256": "485c1061a50e39a5c4b151fbcfdb05e6110d7fb811112ca916717590acde0f93"
     },
     "w3c-svg-tiny-1.2/render-groups-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/render-groups-03-t.skia-4f574af24448.png",
-      "source_sha256": "fbab4ec098b0ca573764e1e7e7d7587687627ccb1ae70a5a63e9510d45da34a4"
+      "source_sha256": "9ae9cc3a9f30fa30afbb7418d955ec9026b6bf949cd0b9bc07f853aff0b5f354"
     },
     "w3c-svg-tiny-1.2/shapes-circle-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-circle-01-t.skia-4f574af24448.png",
-      "source_sha256": "423586ec68e95da99f0173d9a949e6e5a72f76685c9a68c6f751a3a2a6b1aa9a"
+      "source_sha256": "7da206a1b9df16551430b97168d69579c2fcd71beaa46789377d95e8a910fe0b"
     },
     "w3c-svg-tiny-1.2/shapes-circle-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-circle-02-t.skia-4f574af24448.png",
-      "source_sha256": "6e8308b067f39994cde6d79fed6515727ab3ada9b28a5de0b8794c79d3a9eba2"
+      "source_sha256": "2006b84684567e74710cbcc5bae3242e0eae4336a92b4eff34be7a77422d4967"
     },
     "w3c-svg-tiny-1.2/shapes-circle-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-circle-03-t.skia-4f574af24448.png",
-      "source_sha256": "2d034f26e957b72e79577294252a8bcdb63a969f7c965df077797ea14293a233"
+      "source_sha256": "29291d2b7d60ebb5f137d6b807bdf411c55f33f59c4ac67a1a168f5046d9c861"
     },
     "w3c-svg-tiny-1.2/shapes-ellipse-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-ellipse-01-t.skia-4f574af24448.png",
-      "source_sha256": "4a3f767038807bbcbb0201c0448ffc4f9524696d2cc5ad4f968664901e943c9d"
+      "source_sha256": "b1ce4128e4d51a39f47cdd6a1cc59b04b584f6a04721c4f3fded815df68c4c4a"
     },
     "w3c-svg-tiny-1.2/shapes-ellipse-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-ellipse-02-t.skia-4f574af24448.png",
-      "source_sha256": "d9491d6597a3619e41c961d617ef89d1873a81f4037e461dcb1f11d8c5140801"
+      "source_sha256": "bd504443a6d565caff480969258d04ee2ca698f4d54b740911ec46ab3ce878db"
     },
     "w3c-svg-tiny-1.2/shapes-ellipse-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-ellipse-03-t.skia-4f574af24448.png",
-      "source_sha256": "117de6d7d7d25208d75d1b30a92f4e8bcb4b070e049e2f18f8a4c98c1996f9b2"
+      "source_sha256": "37b2410755a77c791d1424fab5a24914b7f2bb32426e14413868d486a1677cc0"
     },
     "w3c-svg-tiny-1.2/shapes-intro-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-intro-01-t.skia-4f574af24448.png",
-      "source_sha256": "f9765743e07bf2fbf87542a393850d274ac019594c5ca5a1262fb8eecb6a277b"
+      "source_sha256": "6ae83391ebf0df7fa77bc4300068725deeeb59459c2b4451b00bf454df63082b"
     },
     "w3c-svg-tiny-1.2/shapes-line-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-line-01-t.skia-4f574af24448.png",
-      "source_sha256": "a46436e511e53a060e7fa7a136dc554acff05ca33a2786ba30668a266a1b3192"
+      "source_sha256": "65739c8c2205a2c8628765ca74997050c30cd6767e4b37803bdbbc0b94a8e45c"
     },
     "w3c-svg-tiny-1.2/shapes-line-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-line-02-t.skia-4f574af24448.png",
-      "source_sha256": "a53d91b2a88ecbdfaadf7e603e5d794bf039a359756f1f689a3ebefebb6ae0c0"
+      "source_sha256": "a7083f5461b32494c0e0e6db9e144c057361e68919ff436d45d4f2196dcd4ce0"
     },
     "w3c-svg-tiny-1.2/shapes-polygon-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-polygon-01-t.skia-4f574af24448.png",
-      "source_sha256": "7fbfa3bf9e1d6ca92b50313060bea7584a0c41f8b6a2c772cdeafb4408634803"
+      "source_sha256": "31cd0f1f81e1da97b2ed9de31d158b9bdd79005e7d28d8badf97aa3622d06b02"
     },
     "w3c-svg-tiny-1.2/shapes-polygon-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-polygon-02-t.skia-4f574af24448.png",
-      "source_sha256": "75df686501200c1b68783c9e979c6de791a5ee538190d9847ad1f2f5ed39a43b"
+      "source_sha256": "b18bf081436d8c8040d7663e266c987bf13fcdd9e5b26eaa85020d113c545f26"
     },
     "w3c-svg-tiny-1.2/shapes-polyline-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-polyline-01-t.skia-4f574af24448.png",
-      "source_sha256": "5a9fdc0d00d077ab489521c5b038400a4222a0f6bbf647b08e75b8dcd3a83b74"
+      "source_sha256": "f0f502f9455172962e9f6e4b33775c0faa6b04a15bb0b03d8b9a0835280d27f9"
     },
     "w3c-svg-tiny-1.2/shapes-polyline-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-polyline-02-t.skia-4f574af24448.png",
-      "source_sha256": "238abdfc94900d77342f6ea4450de50dbe39340d594442c7bfd2b79d6696ed4a"
+      "source_sha256": "4e853f34b52617125074b17dec0acf9dffea7060fab63edd8a136ac5057106f1"
     },
     "w3c-svg-tiny-1.2/shapes-rect-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-rect-01-t.skia-4f574af24448.png",
-      "source_sha256": "d4c57ec97bf311c05923566ef4e92e9d9049bf9add16c92499a56d3e11c78fe7"
+      "source_sha256": "653daa189f3b940c8151ce1f744862f0e458e465c52474c7cd17e2e60143c92f"
     },
     "w3c-svg-tiny-1.2/shapes-rect-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-rect-02-t.skia-4f574af24448.png",
-      "source_sha256": "80ee9c3a654d15c707eab451b6325a7afe1964b9d7d124d1acf57a0089cafdd7"
+      "source_sha256": "9fc879ff64889262c77d2abd30fdc784edf045d01bad459a5232ddfb82f80d2b"
     },
     "w3c-svg-tiny-1.2/shapes-rect-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/shapes-rect-03-t.skia-4f574af24448.png",
-      "source_sha256": "5fdc3262c6ca5372f1a40539bf9408b4080ec20b6b0da9770256188f625d238c"
+      "source_sha256": "dd5658f588c4bbc1438ab8d5cfa8b8753c5c06964fe47434abdb35025102940a"
     },
     "w3c-svg-tiny-1.2/struct-cond-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-cond-01-t.skia-4f574af24448.png",
-      "source_sha256": "4375973dfc71b312a8119c27e8461645ccbbf94b19274e7d4dee4147e25f4b73"
+      "source_sha256": "6ee80651029b2e4bbf1e45d9076c7699e6aacb0816529f3554f416bf02844fc8"
     },
     "w3c-svg-tiny-1.2/struct-cond-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-cond-02-t.skia-4f574af24448.png",
-      "source_sha256": "1ee26dd5494be59a82a58887230bf442592640f92aca647e9f19143d6cae5c78"
+      "source_sha256": "80770276b3a6de61940ad5712a264fa78545df35a8977bb9e2b2d60c65beedae"
     },
     "w3c-svg-tiny-1.2/struct-cond-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-cond-03-t.skia-4f574af24448.png",
-      "source_sha256": "e329eecee09095913bda3ff80da80a41b0cadc1567b19fc0ff1847a177ff6416"
+      "source_sha256": "7f40eea24a8ddc50926900e42fb1a3123e1352f5b24d9e2da3656e631af35255"
     },
     "w3c-svg-tiny-1.2/struct-cond-204-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-cond-204-t.skia-4f574af24448.png",
-      "source_sha256": "23002bcf66e3ecc1c6e9b7ec108e1b5953e46d3e2886ec98711a51311a752440"
+      "source_sha256": "267ca55edcc69db650ff8dcb1c18e30b2ffde14197da05fcf5cb16bf211da371"
     },
     "w3c-svg-tiny-1.2/struct-cond-205-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-cond-205-t.skia-4f574af24448.png",
-      "source_sha256": "e09f54648ce62759bccbab5ed27e0deaf36ceb9f9a1f86688cc11254947290aa"
+      "source_sha256": "2e5fcc30a76e154e83331c9b692e2406ca3ed53a5aa96d66a7bb691b12a3926e"
     },
     "w3c-svg-tiny-1.2/struct-cond-209-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-cond-209-t.skia-4f574af24448.png",
-      "source_sha256": "08e04b808a96ab974a5720a9a69a6d75b27e589e73b436f4d423a327f36d78e5"
+      "source_sha256": "ba681a4e6d5905246f686885c7eb01e9252dafddba4c355038f5d262c5014d74"
     },
     "w3c-svg-tiny-1.2/struct-cond-210-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-cond-210-t.skia-4f574af24448.png",
-      "source_sha256": "b909d7448fd3d389eb840f8e1a5a111335d05515bbe5d4ffaf0dc6ad5f597295"
+      "source_sha256": "7024bf9cfd0d7c828542d3f880c854d77be594ff037c603269d786db9778a421"
     },
     "w3c-svg-tiny-1.2/struct-defs-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-defs-01-t.skia-4f574af24448.png",
-      "source_sha256": "943cd374e87cde86628797bed0e9d0c0b3a57a3ca7bef9da3bf3c069a98e91de"
+      "source_sha256": "8e4d97fbfc2ed61f33babdc11abbd7356a8b0d76cc9fb65f836cebd4767aed79"
     },
     "w3c-svg-tiny-1.2/struct-defs-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-defs-201-t.skia-4f574af24448.png",
-      "source_sha256": "15eca7fd25dd649532dbfba8d601e93c892d2b4723eaac8b72bfd1f4f3848a2e"
+      "source_sha256": "3ac9052ed72382798689eeaff733515c9906c4bbdfdf0e66fe23d0f532cbd5d4"
     },
     "w3c-svg-tiny-1.2/struct-frag-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-frag-02-t.skia-4f574af24448.png",
-      "source_sha256": "b41385b44088f138b9e2a52e215922bc7f18ed1fed741c97861ea4be5701d4ee"
+      "source_sha256": "fcb08f6988c088561ff7c5cbc65e4befb86abbbe47f0259d3a0fc1c9ee1d20cc"
     },
     "w3c-svg-tiny-1.2/struct-frag-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-frag-03-t.skia-4f574af24448.png",
-      "source_sha256": "d847598a9f6df30ddeac5b78178b71a2d95db7e733d90b336a8f7a0ae5292fa0"
+      "source_sha256": "baea8d36be0104d9f59015890947711844536ac6d6240e5e0103d516245095ba"
     },
     "w3c-svg-tiny-1.2/struct-frag-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-frag-04-t.skia-4f574af24448.png",
-      "source_sha256": "771999dd940e700945803fc26477f65900a4a843a0490d5bb8d3fc52dfe17444"
+      "source_sha256": "da333d85ca7fe3d0a26057cd9019d14971738176dffe4109380095e54f987d78"
     },
     "w3c-svg-tiny-1.2/struct-frag-05-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-frag-05-t.skia-4f574af24448.png",
-      "source_sha256": "8e0103ac5d3e543cdc2e62e696674b83e0c18d5bf0e96061ea2e621c543d604e"
+      "source_sha256": "0d5f3868dd5ad50fb36ae24ac7457ddfb1bd96d2795465841ea927216cd5cd16"
     },
     "w3c-svg-tiny-1.2/struct-frag-06-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-frag-06-t.skia-4f574af24448.png",
-      "source_sha256": "6354babd58aaf2f6331fecad6114273de99057b51e6d8a5e75b128c83592b291"
+      "source_sha256": "e3e35c9f55a4a5f626bc32d2278d3a5e84f309a3ac786da289da92700ae02000"
     },
     "w3c-svg-tiny-1.2/struct-group-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-group-01-t.skia-4f574af24448.png",
-      "source_sha256": "76047600319b392f3c1ef956a874f86ddc90e926f474be08c78f1003fcf1cbf9"
+      "source_sha256": "d482aacee8ed7d80d2adcadf1d15f813a8cf621dbcceb7c2a92d5653d3f37711"
     },
     "w3c-svg-tiny-1.2/struct-group-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-group-03-t.skia-4f574af24448.png",
-      "source_sha256": "6be55cb1875f3a79cfb4d44ce30e3d5b6e6919b58feebf8cc862ab921d74cbf4"
+      "source_sha256": "2d56ebf572d352aa915be7c1bde6c96df6b6ccf6e8ab7933061db8e6b1793be2"
     },
     "w3c-svg-tiny-1.2/struct-image-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-image-01-t.skia-4f574af24448.png",
-      "source_sha256": "83233a5ef413766a1a7bc563d849488067c924f5cdaff9494f483879222e8a51"
+      "source_sha256": "c910164ad98ae114efe4e5e6d8b7cb4f535032d91b95a3f52a2c9fefd2e5f8e6"
     },
     "w3c-svg-tiny-1.2/struct-image-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-image-03-t.skia-4f574af24448.png",
-      "source_sha256": "09e2364e2ac9b90724c102a8b08817b11cfec86b1d535ff4e56e08c45be6fdd6"
+      "source_sha256": "e8e1d1b04b9d7194750d37d5a53f5e8b2bab14760369a05094554c9d6386827e"
     },
     "w3c-svg-tiny-1.2/struct-image-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-image-04-t.skia-4f574af24448.png",
-      "source_sha256": "95889699c53ce06b9543740000fa39dde2490174abd82c8b4d0f1a7267f3c96e"
+      "source_sha256": "64624f5a6e44548607edffcf3582c8a9026e90f89a24996ea42c471ed47cd678"
     },
     "w3c-svg-tiny-1.2/struct-image-06-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-image-06-t.skia-4f574af24448.png",
-      "source_sha256": "0235492a417489733a1f2f8255be1db24d2f0d5016037a664a3166848cd3de37"
+      "source_sha256": "3b9a36c57b93759666c8d2e74ba9d5fc3ae644816c3798e88841e232136d167a"
     },
     "w3c-svg-tiny-1.2/struct-image-07-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-image-07-t.skia-4f574af24448.unsuitable.png",
-      "source_sha256": "30ab12644f19e06a9e9e6b990668ee9b22ff146e264079f81eb51c5ed85cc734",
+      "source_sha256": "417de66966691a8df7addb4df9cb356d16b9d762ee9a0c03ac077891da23afbe",
       "suitability": "unsuitable",
       "reason": "Required resource svg/smiley.png returns HTTP 404."
     },
     "w3c-svg-tiny-1.2/struct-image-08-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-image-08-t.skia-4f574af24448.png",
-      "source_sha256": "7906b09fffb71e84971c8616e789e40906889f39f738851b732541995292aaea"
+      "source_sha256": "8e79dc5c1b0b97163740cde8c5a3b95dbd8d5a8580a3dbcdbb9a45643bb78bff"
     },
     "w3c-svg-tiny-1.2/struct-image-09-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-image-09-t.skia-4f574af24448.png",
-      "source_sha256": "c13b24545b4de0448f41b4f2ab1d5b0b6b505b22a366171a71a573393914956a"
+      "source_sha256": "7b7ff2a3bfcd7aa8e3392181820d2513097d58818cfdf3eca67a648e3a68fb2f"
     },
     "w3c-svg-tiny-1.2/struct-image-10-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-image-10-t.skia-4f574af24448.png",
-      "source_sha256": "f4c94d77c47bf5afbcc1c223bba440b47aecffec0fbd14f12eb23843563f925f"
+      "source_sha256": "245d59097aa4632c600b89ef2f8f202c4db7d26ca99959fd719722cde9e69a9c"
     },
     "w3c-svg-tiny-1.2/struct-progressive-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-progressive-201-t.skia-4f574af24448.png",
-      "source_sha256": "58e0e9e6690a8762fb2579d492f7f107951713f736459fcfec3820ad2486d44e"
+      "source_sha256": "e6d9736eb100ee8bd1d1735e4e58730150cdb89704e8dd135c946e2b41c87385"
     },
     "w3c-svg-tiny-1.2/struct-progressive-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-progressive-202-t.skia-4f574af24448.png",
-      "source_sha256": "61b26f358a54ff9c8904738bb149e8ff55d5e80b6c50185df69ea36a1ca6c637"
+      "source_sha256": "0345a00e2e9c5251a9390169dd2bd01be9c4cad345470a8e8ad06b376ad36824"
     },
     "w3c-svg-tiny-1.2/struct-progressive-203-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-progressive-203-t.skia-4f574af24448.png",
-      "source_sha256": "92d7fb29c10f084a4941b0ca55034d7e4f5dc1b6ba4b6aa0d1a396d875ba4e52"
+      "source_sha256": "688ab523773e7b4c73e22ab9b60c164482b0a826429ee879b7f0800d128fce7b"
     },
     "w3c-svg-tiny-1.2/struct-progressive-204-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-progressive-204-t.skia-4f574af24448.png",
-      "source_sha256": "ffe2f49cc46cf627b0f7495cb94f84bbcb9fc558f6a611120c16a81058a6b4b0"
+      "source_sha256": "a6ca1ebba92fb506bb7e4323367f69b9d0aa49a399b8c90cbe6f7d8d74edc54e"
     },
     "w3c-svg-tiny-1.2/struct-svg-203-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-svg-203-t.skia-4f574af24448.png",
-      "source_sha256": "d65539004f5838e7f96ddac8be1ffdede2eb916735ec8ff9f412e4238366079e"
+      "source_sha256": "701edb4db2f4430d58192aeb61771654a04ae8bac8a008b1a230c5078ca34777"
     },
     "w3c-svg-tiny-1.2/struct-svg-204-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-svg-204-t.skia-4f574af24448.png",
-      "source_sha256": "a5831c957fb0337ca777f71caf171d2be965de62cffbac21946b0d4c84fb706e"
+      "source_sha256": "8289170d3e25b9c35061573e92b294856fb02f6b47fa56ce7935472270052bf3"
     },
     "w3c-svg-tiny-1.2/struct-use-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-01-t.skia-4f574af24448.png",
-      "source_sha256": "6af20d759e6434f2c8f2416ae91eb4792977b2e1d750a4a60d38188c3aa68305"
+      "source_sha256": "cd85ed0ebe8470aa0eae48ef1980a4137bbb326154504ad7398e70130070c123"
     },
     "w3c-svg-tiny-1.2/struct-use-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-03-t.skia-4f574af24448.png",
-      "source_sha256": "dfe6a1fd5883746075eaf8954e7a0178b76fcb7839c9ab3ef0733bf443bb2f10"
+      "source_sha256": "456874ef8a3787050109d32172206008ba6f2af4ddd8c30ba20f3f94885f0f80"
     },
     "w3c-svg-tiny-1.2/struct-use-09-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-09-t.skia-4f574af24448.png",
-      "source_sha256": "43e43521543541848241ead20719ab4a683a7d8c10d350488a7e54cc9101b6d0"
+      "source_sha256": "c2e625fd078d5186c718ba01bd4f4345ecb68a57b009185a596d73a8cc0a3299"
     },
     "w3c-svg-tiny-1.2/struct-use-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-201-t.skia-4f574af24448.png",
-      "source_sha256": "f10f08b5b2e04468f3d9e70307a330910586626a00de0c4817f6cb86e11a3ad8",
+      "source_sha256": "40c83f619784fe39d8e10a2ae35bfc163281c12125770c45f6709a4a9abc337b",
       "suitability": "suitable",
       "reason": "All three loads completed and produced identical pixels; Chrome blocks the intentionally invalid data-URI use reference."
     },
     "w3c-svg-tiny-1.2/struct-use-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-202-t.skia-4f574af24448.png",
-      "source_sha256": "03cb47b53631f2b43c3385b846051f89ee3ec759af075ac9acd30c82f5362688"
+      "source_sha256": "b17a48fc09508bc3a8e09d140cd4b2f25f2a0ddce3a3e0d9b0b8d4814d0b69f6"
     },
     "w3c-svg-tiny-1.2/struct-use-203-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-203-t.skia-4f574af24448.png",
-      "source_sha256": "5834ec2bc173e4022575753cb3358017c878236af17f89b6c4a1a262d953f957"
+      "source_sha256": "9b8366c11a056fbc787b2c8df66d75e28fb2f9bb8e562981286055ed2235ac8e"
     },
     "w3c-svg-tiny-1.2/struct-use-204-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-204-t.skia-4f574af24448.png",
-      "source_sha256": "48660fba14622492851312189d93c74709cfc862434ab09cd66abd1ad961f910"
+      "source_sha256": "a1c18a57dcbe898250ed127c633f3a4d8f3616f9ceeece447e8b52a360a36abb"
     },
     "w3c-svg-tiny-1.2/struct-use-206-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-206-t.skia-4f574af24448.png",
-      "source_sha256": "164ba5c1b06681945427300ae4cfe04b3e3d19b041bd6242aa0c8460758e091c"
+      "source_sha256": "14dd355dc64f6cf3515a4a3259e27304bd54a207ebc8066b8050399add7d263f"
     },
     "w3c-svg-tiny-1.2/struct-use-207-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-207-t.skia-4f574af24448.png",
-      "source_sha256": "28a2001e07167760edb3f95ccd867c546e672ab540fdc1c6e6eb8190d8894be1"
+      "source_sha256": "dadb39ce6a7dde6e8892147d94f1cc317b5b4b42ae84a5d8f9456a5408a037d2"
     },
     "w3c-svg-tiny-1.2/struct-use-208-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-208-t.skia-4f574af24448.png",
-      "source_sha256": "9c7cc2df6904e0fffcfb7273cffa3d884100b40ef359d467ff6bdb7a6bfad522"
+      "source_sha256": "4024c687fcadf9c01afecf11024973718fd36defd1cfafaa07c0af842a1e6304"
     },
     "w3c-svg-tiny-1.2/struct-use-209-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-209-t.skia-4f574af24448.png",
-      "source_sha256": "dcefede71bd5522c0f06fd89e40d222f274ab2274734765a12112e06f300cb35"
+      "source_sha256": "0e22d1252a891eb44f80ec7b0d85fda5a68b84643afc59516d9a9e5bfa6ff03e"
     },
     "w3c-svg-tiny-1.2/struct-use-recursion-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-recursion-01-t.skia-4f574af24448.png",
-      "source_sha256": "da59faebe81b09b527c983c5e70eb5abab25e037a7fde9f1f5b25fb3d1a34fc1"
+      "source_sha256": "6ef60ee711bfe76ac62e15a9f56827b11adff92877069bc6bf4a575838b283ba"
     },
     "w3c-svg-tiny-1.2/struct-use-recursion-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-recursion-02-t.skia-4f574af24448.png",
-      "source_sha256": "de5cf3c237f882fb50cb2a9f644dab7c12df606ac5fbe186497fbb9bac0424c3"
+      "source_sha256": "143c3cec7b8c1afd897b9b46310c458fe4c4e257da6f898597c831692e2a33a7"
     },
     "w3c-svg-tiny-1.2/struct-use-recursion-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/struct-use-recursion-03-t.skia-4f574af24448.png",
-      "source_sha256": "a266cc981e37332817b9994583622d7b43c305b33a0c7ec7e79c6bb2041c7960"
+      "source_sha256": "e11465b31efa33426b40d56de757cec99a825edfe972b674d1ab0695c705fce1"
     },
     "w3c-svg-tiny-1.2/styling-inherit-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/styling-inherit-01-t.skia-4f574af24448.png",
-      "source_sha256": "12dbc915d7bcbd59076020b5fe255c32403cc28eb5bfc24c53ac0e106d6cf843"
+      "source_sha256": "05a671de90f63eb9ba24eb4408a09868d7486de04aac39d943c71cf3f8aa3f63"
     },
     "w3c-svg-tiny-1.2/styling-pres-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/styling-pres-01-t.skia-4f574af24448.png",
-      "source_sha256": "be6fae5d399559d85b18360ff356a253eb62a79fd9401e1d68b35016cdd73508"
+      "source_sha256": "e613d6e48c6b7dd0e360d117bff88826fdeefe072af35e58885e2cb1d56d68a8"
     },
     "w3c-svg-tiny-1.2/text-align-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-align-01-t.skia-4f574af24448.png",
-      "source_sha256": "ff091e31eac39d8757389104d586f469339676cec648b3ce7e16f7942e77d97a"
+      "source_sha256": "b718e72f5ff64c09910b7ffe34eaaa1c90b90b8d347b17c8d3bb87f622e3898c"
     },
     "w3c-svg-tiny-1.2/text-align-07-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-align-07-t.skia-4f574af24448.png",
-      "source_sha256": "423c040a1d637c86bab0989bcc038fadb361809525d6707ad140507633676c6f"
+      "source_sha256": "aabfc1b518473fd0bd6fd5c91884ca330d09cc23a24f295710b0a074ae613604"
     },
     "w3c-svg-tiny-1.2/text-align-08-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-align-08-t.skia-4f574af24448.png",
-      "source_sha256": "4d8772a262c9ec3f958c7c2cf47091c3c0359cab1b349114c2590eae8d973d28"
+      "source_sha256": "df288e89af49e3880b5227290db48aed4fc51c296b3dcc5305c66f21aec7668a"
     },
     "w3c-svg-tiny-1.2/text-align-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-align-201-t.skia-4f574af24448.png",
-      "source_sha256": "648568ee998feb051e0fd7079bcdfadb2eabbab3a6e972578f70a70ce0f8cb99"
+      "source_sha256": "2978c166af9e59100bf9483429c515f2653e0cd171e290cbb9b3a7e1492c5001"
     },
     "w3c-svg-tiny-1.2/text-align-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-align-202-t.skia-4f574af24448.png",
-      "source_sha256": "72d2e642f38757072732410c39b66d7a966c853c11a00a55083245abfa824bbd"
+      "source_sha256": "5a114d8e9f341d33123ef6aad99a682ba3c59af6ad3bfe1d39b4bd5917283d06"
     },
     "w3c-svg-tiny-1.2/text-area-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-area-201-t.skia-4f574af24448.png",
-      "source_sha256": "28c2457c5f422ad9801b0f17ee56239dabcb240e3b75535190153299a109b08e"
+      "source_sha256": "efe777581291ee0bbfeed5b4cb25ecb33fbeb9a90506151bc9947af917f90656"
     },
     "w3c-svg-tiny-1.2/text-area-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-area-202-t.skia-4f574af24448.png",
-      "source_sha256": "9a57dc6851baec8c27163710354e209d3acee8ea76840fb97d30b247a699a717"
+      "source_sha256": "ef001d1c1b9b2456e2623a6791393b328a0751851bc0f870cfba858c333f6c74"
     },
     "w3c-svg-tiny-1.2/text-area-205-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-area-205-t.skia-4f574af24448.png",
-      "source_sha256": "2420ad5a69a535c72a3135df0f635a685aac4bb192ccfa125a6deed0589bb7fb"
+      "source_sha256": "3e19fd35723164fed04041ab86012aaea924a76176d85f8fc3461c2656284cf5"
     },
     "w3c-svg-tiny-1.2/text-area-206-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-area-206-t.skia-4f574af24448.png",
-      "source_sha256": "9c5603bb308b7eaa1c90de097502e42d5294f2fb90702365282565254d40d4be"
+      "source_sha256": "d4433008d557ee3c56ecf796d74c0ad47e6233e84bb26925a001cf383776f908"
     },
     "w3c-svg-tiny-1.2/text-area-207-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-area-207-t.skia-4f574af24448.png",
-      "source_sha256": "20122d3aba9d91a7936711db8239fe425fa6552ebe3c5fa99a76da892180dd7e"
+      "source_sha256": "1a07342bdb3b8c761bcb142309fc4df8df02141edd00588f2e70c27cdbb1798c"
     },
     "w3c-svg-tiny-1.2/text-area-208-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-area-208-t.skia-4f574af24448.png",
-      "source_sha256": "2aed48177c43b47fa5bbccd4598b2222038b9d9aa2ace99db4924f25c879f44e"
+      "source_sha256": "d70c5ed27a9ab3a4d1345ac4a80b418f5b7c84f606bc2d2fa97209275d7bc3f0"
     },
     "w3c-svg-tiny-1.2/text-area-209-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-area-209-t.skia-4f574af24448.png",
-      "source_sha256": "f82ffc0180c96c73bf3e1211c1d4ab954e622a93a62d8c0a312da48b4fd310d0"
+      "source_sha256": "c8111e2c4d09baf1fbb8904215d9c6d94a0c7072eba059beed7fe0b6010ef64d"
     },
     "w3c-svg-tiny-1.2/text-area-210-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-area-210-t.skia-4f574af24448.png",
-      "source_sha256": "7d1a4e743d3eb1def2af9f11aea7d08a4d95663f2f48fb360f68a37dcb9066e1"
+      "source_sha256": "ba20eaffe1d119fdb114659903b36dcd1d5578b850825e80dbf75f9487a251b2"
     },
     "w3c-svg-tiny-1.2/text-area-220-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-area-220-t.skia-4f574af24448.png",
-      "source_sha256": "137ec369f820543a66776ae5b37f557fcb1ddc2ac09143ab35e7b9d609696fe1"
+      "source_sha256": "07d94c9308ec87b87b7363b264cea4293405a94a6fb2bf90717fcf1e5c47af98"
     },
     "w3c-svg-tiny-1.2/text-area-221-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-area-221-t.skia-4f574af24448.png",
-      "source_sha256": "b53d352633698f18d8f8165b070e17e84cafb3efe74708ddb802c99329fcbb21"
+      "source_sha256": "0ca9e5bf7f239d81cddaacdf46f25d99b58482663d6937870478b2db0bb0b028"
     },
     "w3c-svg-tiny-1.2/text-fonts-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-fonts-01-t.skia-4f574af24448.png",
-      "source_sha256": "e8c6d11df7b963eb436a9bf672e57336301c9fdb701970aae3f6f306a0bfdead"
+      "source_sha256": "c7faa7500150b6e31a177c91143f8433c564db19a29eda3b13e9bcea9a6cd55e"
     },
     "w3c-svg-tiny-1.2/text-fonts-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-fonts-02-t.skia-4f574af24448.png",
-      "source_sha256": "c96722e6c7003aed60aa3b2019f95cc4909440ec7c606bb5a29dc7d268d56180"
+      "source_sha256": "1aee586158795551751d5d518d4cc76a3f63d5fa2708e98107c2cb6fb7b6d740"
     },
     "w3c-svg-tiny-1.2/text-fonts-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-fonts-03-t.skia-4f574af24448.png",
-      "source_sha256": "76d73ef72e6321ee83979ea6cb6c45bacca7a2e5e2eb8e0ffef9cf893be623cd"
+      "source_sha256": "4414a8c00b58ea4a1b442a8477aeecd694ab19a5d3e43a8368fd9775acf4b306"
     },
     "w3c-svg-tiny-1.2/text-fonts-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-fonts-04-t.skia-4f574af24448.png",
-      "source_sha256": "9a3cff3d63383a942cf4cde3fbc46e9e9bc6b768236f872121825fc1e2f0f150"
+      "source_sha256": "2316648147d5d12a56733f9ac140a802bd7763884e2b36ae00dfa73bc441775e"
     },
     "w3c-svg-tiny-1.2/text-fonts-202-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-fonts-202-t.skia-4f574af24448.png",
-      "source_sha256": "aa733fd27d975669eb0435565b9f197d2af2827fc424ba4120030c5becc833bb"
+      "source_sha256": "6a4484ccddb4cdb6f9e9456ea6363226fc8be417d7ab82546f627eddb373cf89"
     },
     "w3c-svg-tiny-1.2/text-intro-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-intro-01-t.skia-4f574af24448.png",
-      "source_sha256": "d0e28b4ad758d766606b01c3fd7322244f8f50d3f8b98764943cfeb7c5de9849"
+      "source_sha256": "c4a18df4e7c246e05dd7fbfb3cf4bf8a21b0fc717a7fd1fa33b93abd828c149f"
     },
     "w3c-svg-tiny-1.2/text-intro-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-intro-04-t.skia-4f574af24448.png",
-      "source_sha256": "3f2e95d49483e49568dddf06cae50f80441f4b65dccc2f4b43acb0a40128b8f5"
+      "source_sha256": "523f270e3b2e4a371e83d92832ee08ce0ad32876ac46d0ee8e04e4528fdde520"
     },
     "w3c-svg-tiny-1.2/text-intro-05-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-intro-05-t.skia-4f574af24448.png",
-      "source_sha256": "7cc6e5a051c898151a2cfe0316072eea791cb1ada897a5c6ed4e58943abfec9b"
+      "source_sha256": "9bceac3405746bfd4dfed54aff1932621ae837a4ffbc4e3f56ff4c4b53496f4f"
     },
     "w3c-svg-tiny-1.2/text-intro-06-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-intro-06-t.skia-4f574af24448.png",
-      "source_sha256": "362272197b0d41a1add4e6db236515e796e67fa6058a1d7a05ece89dab210b74"
+      "source_sha256": "e58ec7ca1a0333c46553aa7265aa03ae6fc4c963bbf47c0bbb9668dea36ba026"
     },
     "w3c-svg-tiny-1.2/text-intro-201-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-intro-201-t.skia-4f574af24448.png",
-      "source_sha256": "c7b7f302805e8e6f3bb8fbfd98d35ab78a05112e370c249a13f0e033153b1a26"
+      "source_sha256": "83d15cc9254fe351aad47d25982dcb4485e1b164a948450c4c1183779c9d260d"
     },
     "w3c-svg-tiny-1.2/text-text-04-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-text-04-t.skia-4f574af24448.png",
-      "source_sha256": "7222f33b975ef222f596863ae49e47f78d0beb00832c044351e8b41d13a34cba"
+      "source_sha256": "85eab670df34460cb0f12174c4506ad9b86f1f344a4efdcaac0495487c494d07"
     },
     "w3c-svg-tiny-1.2/text-text-06-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-text-06-t.skia-4f574af24448.png",
-      "source_sha256": "57d9e50ad461e1b57e367ef1d82710ae9fe1037f855579e0febba0e3e847347d"
+      "source_sha256": "6bae4a0c24a8a4dc118ab2eadb2737559857e871790f8e63268e2c4077dc2dbd"
     },
     "w3c-svg-tiny-1.2/text-text-07-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-text-07-t.skia-4f574af24448.png",
-      "source_sha256": "64ab6496b5904eb665079de6640107d630873476c4c24c797a9a32ed6eff1249"
+      "source_sha256": "daba047a31030ab5956c2740e5fdc777d4eb2b8cd0c15e17f2f197fe3b86a5d1"
     },
     "w3c-svg-tiny-1.2/text-text-08-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-text-08-t.skia-4f574af24448.png",
-      "source_sha256": "7d6db6cae00747286b58237358cc5c053cb2bf9ee7d4102d9f2e591d3ab8343d"
+      "source_sha256": "b2678f06aca5e8d4372a77011b225c30e97966c563aea3e5d3e99c96fc8b6d38"
     },
     "w3c-svg-tiny-1.2/text-text-09-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-text-09-t.skia-4f574af24448.png",
-      "source_sha256": "6c50fa37eeecb6602c0e6632e4d9dde114a902e17c89e8cedbcf09af09de0283"
+      "source_sha256": "2a3b12c6adf5df6881ddbbfa6b9e8cd21f1c8cf58f6c19d949120f360acd6eef"
     },
     "w3c-svg-tiny-1.2/text-tselect-03-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-tselect-03-t.skia-4f574af24448.png",
-      "source_sha256": "44fc9456997261d2912057f994b278d1257411a26a3c30d1c08e1756e36d8768"
+      "source_sha256": "a73d996094e316bf76c0ed4522b8ed08d489ea9141e158793005081c06659f3a"
     },
     "w3c-svg-tiny-1.2/text-ws-01-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-ws-01-t.skia-4f574af24448.png",
-      "source_sha256": "5323c19926c076ca9537a22ca8abd22030eef2e01b252520189a77f0011983e4"
+      "source_sha256": "8a6e516330c05958be0ddbed44947e92d8bcef43f8c14770c335f13f06892e67"
     },
     "w3c-svg-tiny-1.2/text-ws-02-t.svg": {
       "image": "baselines/w3c-svg-tiny-1.2/text-ws-02-t.skia-4f574af24448.png",
-      "source_sha256": "26bfeeee0b652e43300eb88cf3c148f4c323654f76adbd3d19c117f000981571"
+      "source_sha256": "f4d2ce6213a9bc77e30961dfc256e3338b2242c2311afb8b81ab7fbd36a6e9ad"
     },
     "wpt-svg2-reftests/linking/reftests/url-processing-fetch-properties-001.sub.svg": {
       "image": "baselines/wpt-svg2-reftests/linking/reftests/url-processing-fetch-properties-001.sub.skia-4f574af24448.png",

@@ -27,11 +27,17 @@ seven unsuitable results, including the previously incomplete captures.
   environment-dependent. W3C missing resources remain reflected in its snapshots.
 
 [`index.json`](index.json) selects these images over the usual upstream PNG or
-ThorVG-rendered WPT reference, preserving the original corpora. It records the
+ThorVG-rendered WPT reference. It records the
 source hashes and corpus revisions; the updater rejects changed sources/revisions
 until their snapshots are reviewed. Existing `reference_source` fields identify
 upstream WPT reference SVGs, while `reference_image` and `reference_renderer`
 identify the active comparison baseline.
+
+For W3C Tiny, `update.py` removes only the `text` element with `id="revision"`
+from all 207 SVG inputs. Both these Chrome PNGs and ThorVG output are rendered
+from that same SVG, and the manifest hashes identify the processed inputs.
+Other SVG content and the original encoding are preserved. The entire image is compared;
+no rectangular region is masked or cropped. Original upstream PNGs are retained.
 
 These snapshots measure **Chrome compatibility**, including the 56 former UB
 placeholder cases and legacy Tiny behavior. They are not normative SVG expected

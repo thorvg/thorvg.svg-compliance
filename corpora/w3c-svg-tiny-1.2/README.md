@@ -9,5 +9,5 @@
 - Selection: Static tests only; animation, script, handler, and multimedia tests are excluded
 - Reference oracle: Unmodified W3C reference PNG; W3C permits label-text variation
 
-The files are copied without semantic modification. See [../../CORPORA.md](../../CORPORA.md)
+The Revision text element is removed from the W3C SVG inputs before both Chrome and ThorVG rendering. See [../../CORPORA.md](../../CORPORA.md)
 for the comparison methodology and licensing notes.

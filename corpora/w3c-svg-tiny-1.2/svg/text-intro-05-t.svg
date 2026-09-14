@@ -34,7 +34,6 @@
     <!-- Nafees Nastaleeq and Nafees Naskh are freely available from the Center for Research in Urdu Language Processing (CRULP http://www.crulp.org ) at the National University of Computer and Emerging Sciences, Pakistan ( http://www.nu.edu.pk ) -->
   </g>
   <g font-family="SVGFreeSansASCII,sans-serif" font-size="32">
-    <text xml:id="revision" x="10" y="340" stroke="none" fill="black">$Revision: 1.6 $</text>
   </g>
   <rect xml:id="test-frame" x="1" y="1" width="478" height="358" fill="none" stroke="#000" />
   <!-- comment out this watermark once the test is approved -->

@@ -55,8 +55,6 @@
     <textArea x="75" y="105" width="390" height="175" font-size="24" fill="#396">Together they searched all through the great palace and even to the farthest limits of the palace grounds, which were quite extensive, but nowhere could they find a trace of Ozma.  When Dorothy returned to where Betsy and Trot awaited her, the little girl's face was rather solemn and troubled, for never before had Ozma gone away without telling her friends where she was going, or without an escort that befitted her royal state.</textArea>
   </g>
   <g font-family="SVGFreeSansASCII,sans-serif" font-size="32">
-    <text xml:id="revision" x="10" y="340" stroke="none"
-      fill="black">$Revision: 1.7 $</text>
   </g>
   <rect xml:id="test-frame" x="1" y="1" width="478" height="358" fill="none" stroke="#000"/>
   <!-- comment out this watermark once the test is approved -->

@@ -131,6 +131,12 @@ def read_svg(path):
     return path.read_text(encoding="utf-8", errors="ignore")
 
 
+def without_w3c_revision(svg):
+    # Remove only the pinned suite's Revision text, preserving other content and the original encoding.
+    encoding = "utf-16-le" if svg.startswith(b"\xff\xfe") else "utf-16-be" if svg.startswith(b"\xfe\xff") else "latin1"
+    return re.sub(r'[ \t]*<text\b(?=[^>]*\s(?:xml:)?id\s*=\s*(["\'])revision\1)[^>]*>.*?</text\s*>[ \t]*(?:\r?\n)?', "", svg.decode(encoding), flags=re.S).encode(encoding)
+
+
 def elements(text):
     found = [tag for tag in TAG.findall(text) if tag in VISIBLE_ELEMENTS]
     return sorted(set(found), key=lambda value: value.lower())
@@ -200,7 +206,7 @@ def suite_readme(suite, revision, count):
 - Selection: {suite['selection']}
 - Reference oracle: {suite['oracle']}
 
-The files are copied without semantic modification. See [../../CORPORA.md](../../CORPORA.md)
+{"The Revision text element is removed from the W3C SVG inputs before both Chrome and ThorVG rendering." if suite['id'] == 'w3c-svg-tiny-1.2' else "The files are copied without semantic modification."} See [../../CORPORA.md](../../CORPORA.md)
 for the comparison methodology and licensing notes.
 """
 
@@ -283,8 +289,9 @@ def prepare_corpora(suites, sources):
             continue
         relative = Path(svg.name)
         copy_file(svg, target / "svg" / relative)
+        (target / "svg" / relative).write_bytes(without_w3c_revision(svg.read_bytes()))
         copy_file(reference, target / "reference" / relative.with_suffix(".png"))
-        source_elements = elements(text)
+        source_elements = elements(read_svg(target / "svg" / relative))
         record = base_record(
             suite, relative, f"corpora/{suite['id']}/svg/{relative.as_posix()}",
             f"{suite['source_url']}svg/{relative.as_posix()}", title(text, relative.stem),
@@ -597,13 +604,13 @@ def write_corpus_index(metadata, summary):
     lines += [
         "", "## Selection and reference policy", "",
         "- **WPT** is the primary conformance track. Only static SVG-to-SVG equality reftests are indexed. Test and reference are rendered by the same ThorVG commit.",
-        "- **W3C SVG Tiny 1.2** is advisory. The 207 static files are copied unmodified; animation, script, handler, and multimedia files are excluded. W3C permits label-text variation; this report compares all selected files against the reference PNGs.",
+        "- **W3C SVG Tiny 1.2** is advisory. Animation, script, handler, and multimedia files are excluded. Only the Revision text element is removed from all 207 selected SVGs before generating both Chrome baselines and ThorVG output. The entire image is compared, including content behind the former label; no rectangle is masked or cropped.",
         "- **resvg-test-suite** is diagnostic rather than normative. Its upstream PNGs are useful cross-renderer references. Font-sensitive and undefined-behavior cases use the same visual thresholds as other tests.",
         "- **Chrome/Skia overrides:** Cases listed in [`baselines/index.json`](baselines/index.json) use the versioned Chrome test PNG instead of the default reference above. These snapshots measure browser compatibility, including formerly undefined cases; they are not normative SVG references. See [`baselines/README.md`](baselines/README.md) for the renderer and capture conditions.",
         "", "## Pixel comparison", "",
         f"Both images are composited on white and blurred by {CONFIG['comparison']['blur_radius']} px before comparison. Pixels whose largest RGB-channel delta is at most {CONFIG['comparison']['channel_delta']} are ignored. Each suite additionally declares MAE, whole-image changed-ratio, and content-only changed-ratio limits in [`config/suites.json`](config/suites.json).",
         "", "## Licensing", "",
-        "Each corpus directory contains the upstream license/notice. The W3C files remain unmodified because the applicable W3C Document License does not grant a general right to create derivatives. Bundled resvg fonts retain their individual license files.",
+        "Each corpus directory contains the upstream license/notice. Bundled resvg fonts retain their individual license files.",
         "",
     ]
     temporary = ROOT / ".CORPORA.md.next"

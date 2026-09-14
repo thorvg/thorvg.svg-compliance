@@ -34,8 +34,6 @@
     <rect x="300" y="170" width="120" height="120" fill="lime" />
   </g>
   <g font-family="SVGFreeSansASCII,sans-serif" font-size="32">
-    <text xml:id="revision" x="10" y="340" stroke="none"
-      fill="black">$Revision: 1.1 $</text>
   </g>
   <rect xml:id="test-frame" x="1" y="1" width="478" height="358" fill="none" stroke="#000"/>
   <!-- comment out this watermark once the test is approved -->

@@ -26,3 +26,21 @@
 재귀 필터 recursive-links-2는 이전 4회 검사(60/60/500/1500ms)에서 서로 다른 출력을 보였다. 이번 3회 일치만으로 이전 변동을 해소했다고 판단하지 않았다.
 
 WPT 3개의 새 baseline을 적용하면 기존 ThorVG 결과는 모두 PASS에서 FAIL로 바뀐다. 기존 빈 이미지끼리의 일치가 통과로 잡히던 문제를 해소했다.
+
+## W3C Tiny Revision 텍스트 제거
+
+W3C SVG Tiny 1.2 static subset **207개 전체**에서 `xml:id="revision"`인 `<text>` 요소를 제거했다. 비교에 사용하는 SVG 자체를 처리하며, 다른 도형·텍스트·속성은 유지한다. UTF-16 파일 1개를 포함하여 원래 인코딩과 나머지 내용도 보존한다.
+
+- Chrome/Skia baseline PNG 207개를 처리된 SVG로 다시 캡처했다. manifest의 source SHA-256도 해당 SVG를 가리킨다.
+- `update.py`는 원본 캐시에서 corpus를 준비할 때마다 같은 처리를 적용하고, 그 SVG로 ThorVG 출력을 생성한다.
+- 전체 이미지 픽셀을 비교한다. 사각형 제외, 크롭, 회색 마스킹 및 관련 메타데이터는 사용하지 않는다.
+- `shapes-line-02-t`, `paint-stroke-08-t`, `struct-group-03-t` 등에서 Revision과 겹쳤던 도형은 텍스트 제거 후에도 남으며 비교에 포함된다.
+- 기존 부적합 이미지의 표시는 유지한다. 로딩 중단 후 얻은 진단 이미지는 계속 `SKIP`이다.
+
+`python3 scripts/update.py --svg2png /usr/local/bin/tvg-svg2png --offline` 전체 재실행 결과:
+
+| 세트 | PASS | FAIL | SKIP |
+|---|---:|---:|---:|
+| wpt-svg2-reftests | 99 | 152 | 0 |
+| w3c-svg-tiny-1.2 | 41 | 162 | 4 |
+| resvg-test-suite | 643 | 1033 | 3 |

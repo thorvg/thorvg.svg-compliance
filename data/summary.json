@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T07:20:21.590808+00:00",
+  "generated_at": "2026-09-14T07:42:18.325418+00:00",
   "thorvg": {
     "version": "installed ThorVG",
     "commit": null,
@@ -31,8 +31,8 @@
       "track": "advisory",
       "spec": "SVG Tiny 1.2",
       "total": 207,
-      "pass": 18,
-      "fail": 185,
+      "pass": 41,
+      "fail": 162,
       "skip": 4,
       "index": "corpora/w3c-svg-tiny-1.2/README.md",
       "revision": "2008-09-12 archive (sha256: 2203d6f44178)"
