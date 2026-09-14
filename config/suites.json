@@ -50,21 +50,6 @@
       "max_mae": 5.0,
       "max_changed_ratio": 0.02,
       "max_content_changed_ratio": 0.15
-    },
-    {
-      "id": "thorvg-regression",
-      "name": "ThorVG official SVG regression assets",
-      "track": "regression",
-      "spec": "ThorVG regression",
-      "source_url": "https://github.com/thorvg/thorvg/tree/main/test/resources",
-      "license": "MIT",
-      "license_url": "https://github.com/thorvg/thorvg/blob/main/LICENSE",
-      "selection": "SVG files maintained in ThorVG test/resources",
-      "oracle": "Accepted ThorVG baseline generated with --accept-regression-baseline",
-      "resolution": [512, 512],
-      "max_mae": 1.0,
-      "max_changed_ratio": 0.005,
-      "max_content_changed_ratio": 0.02
     }
   ]
 }

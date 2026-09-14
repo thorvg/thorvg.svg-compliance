@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-14T02:46:12.215119+00:00",
+  "generated_at": "2026-09-07T15:17:59.695626+00:00",
   "thorvg": {
-    "commit": "a3a2b79ffef74d825e677998ef7c4cba8b55881e",
-    "version": "a3a2b79f",
+    "commit": "3b567e7660d907591c47b1141993c7a263af5245",
+    "version": "3b567e76",
     "dirty": false,
-    "commit_url": "https://github.com/thorvg/thorvg/commit/a3a2b79ffef74d825e677998ef7c4cba8b55881e",
+    "commit_url": "https://github.com/thorvg/thorvg/commit/3b567e7660d907591c47b1141993c7a263af5245",
     "cli_tools_commit": "8e45bdf62a3c5f4aac575b34ead329ed7d36abb9"
   },
   "comparison": {
@@ -21,7 +21,7 @@
       "pass": 135,
       "fail": 116,
       "index": "corpora/wpt-svg2-reftests/README.md",
-      "revision": "4493b11027761c7ff43352df94105dc9075e35d0"
+      "revision": "17d68806f7be968ed38196f068db03fb3a5dff2a"
     },
     {
       "id": "w3c-svg-tiny-1.2",
@@ -40,21 +40,10 @@
       "track": "diagnostic",
       "spec": "Static SVG",
       "total": 1679,
-      "pass": 628,
-      "fail": 1051,
+      "pass": 626,
+      "fail": 1053,
       "index": "corpora/resvg-test-suite/README.md",
       "revision": "d8e064337faf01bc5a9579187a56dbdbe3eacc72"
-    },
-    {
-      "id": "thorvg-regression",
-      "name": "ThorVG official SVG regression assets",
-      "track": "regression",
-      "spec": "ThorVG regression",
-      "total": 5,
-      "pass": 5,
-      "fail": 0,
-      "index": "corpora/thorvg-regression/README.md",
-      "revision": "a3a2b79ffef74d825e677998ef7c4cba8b55881e"
     }
   ]
 }

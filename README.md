@@ -53,7 +53,6 @@ Other options:
 
 - `--thorvg-ref REF`: fetch a branch, tag, or commit instead of `main`; used without `--thorvg`.
 - `--offline`: reuse cached sources without fetching; test suites and any required CLI Tools must already be cached.
-- `--accept-regression-baseline`: replace stored regression reference images with the current renderings.
 
 ## Read the results
 
@@ -62,11 +61,10 @@ Other options:
 | WPT static SVG reftests | Conformance | Reference SVGs rendered by the same ThorVG build |
 | W3C SVG Tiny 1.2 static subset | Advisory | W3C reference PNGs |
 | resvg-test-suite | Diagnostic | Upstream reference PNGs |
-| ThorVG test resources | Regression | Stored ThorVG baseline PNGs |
 
 `PASS` means the rendering meets the suite's visual thresholds. `FAIL` means a
 visual mismatch or a rendering/loading error. Pass rates include all indexed
-tests. The four tracks measure different things; they do not form a single SVG
+tests. The three tracks measure different things; they do not form a single SVG
 compliance percentage.
 
 See [CORPORA.md](CORPORA.md) for selection rules, comparison methods, and licenses,

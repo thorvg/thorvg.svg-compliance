@@ -108,7 +108,7 @@ class UpdateTest(unittest.TestCase):
                 return errors
 
             with patch.object(update, "CACHE", root), patch.object(update, "render_requests", render):
-                _, results = update.finalize(records, {suite["id"]: suite}, root, None, False, "test")
+                _, results = update.finalize(records, {suite["id"]: suite}, root, None)
                 _, summary = update.write_data(results, {suite["id"]: suite}, [{
                     "id": suite["id"], "index": "README.md", "revision": "test",
                 }], {})
