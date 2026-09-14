@@ -344,6 +344,26 @@ def build_thorvg(source, cli_tools=None):
     return tools[0]
 
 
+def prepare_renderer(args):
+    if args.svg2png:
+        tool = args.svg2png.expanduser().resolve()
+        if not tool.is_file() or not os.access(tool, os.X_OK):
+            raise RuntimeError(f"Not an executable SVG converter: {tool}")
+        return tool, {
+            "version": "installed ThorVG", "commit": None, "commit_url": None,
+            "dirty": False, "converter_path": str(tool), "converter_sha256": sha256(tool),
+        }
+    source = args.thorvg.resolve() if args.thorvg else ensure_git_repo("thorvg", "https://github.com/thorvg/thorvg", args.thorvg_ref, offline=args.offline)
+    if not (source / ".git").exists():
+        raise RuntimeError(f"Not a ThorVG Git checkout: {source}")
+    info = thorvg_info(source)
+    cli_tools = None
+    if not (source / "tools/svg2png/meson.build").exists():
+        cli_tools = ensure_git_repo("thorvg-cli-tools", "https://github.com/thorvg/thorvg.cli-tools", "main", offline=args.offline)
+        info["cli_tools_commit"] = git(cli_tools, "rev-parse", "HEAD")
+    return build_thorvg(source, cli_tools), info
+
+
 def font_environment(corpora):
     directories = [corpora / "resvg-test-suite/fonts", corpora / "w3c-svg-tiny-1.2/resources"]
     config = CACHE / "fonts.conf"
@@ -577,8 +597,10 @@ def replace_directory(source, destination):
 
 def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--thorvg", type=Path, help="Use this local ThorVG checkout without fetching it")
-    parser.add_argument("--thorvg-ref", default="main", help="ThorVG ref to fetch when --thorvg is omitted")
+    renderer = parser.add_mutually_exclusive_group()
+    renderer.add_argument("--svg2png", type=Path, help="Use this installed converter without fetching or building ThorVG")
+    renderer.add_argument("--thorvg", type=Path, help="Use this local ThorVG checkout without fetching it")
+    renderer.add_argument("--thorvg-ref", default="main", help="ThorVG ref to fetch when --thorvg is omitted")
     parser.add_argument("--offline", action="store_true", help="Use only existing source caches")
     return parser.parse_args()
 
@@ -586,21 +608,13 @@ def parse_args():
 def main():
     args = parse_args()
     CACHE.mkdir(exist_ok=True)
+    tool, thorvg = prepare_renderer(args)
     suites = {suite["id"]: suite for suite in CONFIG["suites"]}
     sources = {
         "resvg-test-suite": ensure_git_repo("resvg-test-suite", suites["resvg-test-suite"]["source_url"], suites["resvg-test-suite"]["source_ref"], offline=args.offline),
         "wpt-svg2-reftests": ensure_git_repo("wpt", suites["wpt-svg2-reftests"]["source_url"], suites["wpt-svg2-reftests"]["source_ref"], sparse=["svg"], offline=args.offline),
         "w3c-svg-tiny-1.2": ensure_w3c(suites["w3c-svg-tiny-1.2"], args.offline),
     }
-    thorvg_path = args.thorvg.resolve() if args.thorvg else ensure_git_repo("thorvg", "https://github.com/thorvg/thorvg", args.thorvg_ref, offline=args.offline)
-    if not (thorvg_path / ".git").exists():
-        raise RuntimeError(f"Not a ThorVG Git checkout: {thorvg_path}")
-    thorvg = thorvg_info(thorvg_path)
-    cli_tools = None
-    if not (thorvg_path / "tools/svg2png/meson.build").exists():
-        cli_tools = ensure_git_repo("thorvg-cli-tools", "https://github.com/thorvg/thorvg.cli-tools", "main", offline=args.offline)
-        thorvg["cli_tools_commit"] = git(cli_tools, "rev-parse", "HEAD")
-    tool = build_thorvg(thorvg_path, cli_tools)
     corpora, records, metadata = prepare_corpora(suites, sources)
     assets, records = finalize(records, suites, corpora, tool)
     data, summary = write_data(records, suites, metadata, thorvg)
@@ -608,7 +622,8 @@ def main():
     replace_directory(assets, ROOT / "assets")
     replace_directory(data, ROOT / "data")
     write_corpus_index(metadata, summary)
-    print(f"Published {len(records)} indexed SVG results for ThorVG {thorvg['version']} ({thorvg['commit'][:12]}).")
+    baseline = thorvg["commit"][:12] if thorvg["commit"] else thorvg["converter_path"]
+    print(f"Published {len(records)} indexed SVG results for {thorvg['version']} ({baseline}).")
 
 
 if __name__ == "__main__":

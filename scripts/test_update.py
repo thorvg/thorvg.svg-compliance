@@ -6,6 +6,7 @@ import tempfile
 import unittest
 from contextlib import redirect_stderr
 from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import patch
 
 from PIL import Image
@@ -17,6 +18,22 @@ SPEC.loader.exec_module(update)
 
 
 class UpdateTest(unittest.TestCase):
+    def test_installed_converter_skips_source_fetch_and_build(self):
+        with tempfile.TemporaryDirectory() as directory:
+            tool = Path(directory) / "tvg-svg2png"
+            args = SimpleNamespace(svg2png=tool)
+            with patch.object(update, "ensure_git_repo") as fetch, patch.object(update, "build_thorvg") as build:
+                with self.assertRaisesRegex(RuntimeError, "Not an executable"):
+                    update.prepare_renderer(args)
+                tool.write_text("#!/bin/sh\nexit 0\n")
+                tool.chmod(0o755)
+                selected, info = update.prepare_renderer(args)
+                self.assertEqual(selected, tool.resolve())
+                self.assertEqual(info["converter_sha256"], update.sha256(tool))
+                self.assertIsNone(info["commit"])
+                fetch.assert_not_called()
+                build.assert_not_called()
+
     def test_failed_command_prints_diagnostics(self):
         output = io.StringIO()
         command = [sys.executable, "-c", "import sys; print('build output'); print('compiler error', file=sys.stderr); sys.exit(7)"]

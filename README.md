@@ -49,6 +49,22 @@ To test a local ThorVG checkout:
 python3 scripts/update.py --thorvg /path/to/thorvg
 ```
 
+To use an installed converter with cached corpora:
+
+```bash
+python3 scripts/update.py --svg2png /usr/local/bin/tvg-svg2png --offline
+```
+
+`--svg2png` skips ThorVG and CLI Tools fetching and building. It cannot be combined
+with `--thorvg` or `--thorvg-ref`. The report records the converter's absolute path
+and SHA-256 instead of a ThorVG source commit. `--offline` requires cached corpora.
+
+The local CLI Tools build loads `fonts/PublicSans-Regular.ttf` from its source
+checkout, so keep that file available after installing the executable. It provides
+a Latin text fallback; the updater's Fontconfig environment does not make this
+converter load the corpus fonts. Exact font-family matching and Hangul/CJK output
+require additional font support.
+
 Other options:
 
 - `--thorvg-ref REF`: fetch a branch, tag, or commit instead of `main`; used without `--thorvg`.
