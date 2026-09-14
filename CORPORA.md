@@ -15,6 +15,7 @@ This is the human-readable index for every vendored test set. The full machine i
 - **WPT** is the primary conformance track. Only static SVG-to-SVG equality reftests are indexed. Test and reference are rendered by the same ThorVG commit.
 - **W3C SVG Tiny 1.2** is advisory. The 207 static files are copied unmodified; animation, script, handler, and multimedia files are excluded. W3C permits label-text variation; this report compares all selected files against the reference PNGs.
 - **resvg-test-suite** is diagnostic rather than normative. Its upstream PNGs are useful cross-renderer references. Font-sensitive and undefined-behavior cases use the same visual thresholds as other tests.
+- **Chrome/Skia overrides:** Cases listed in [`baselines/index.json`](baselines/index.json) use the versioned Chrome test PNG instead of the default reference above. These snapshots measure browser compatibility, including formerly undefined cases; they are not normative SVG references. See [`baselines/README.md`](baselines/README.md) for the renderer and capture conditions.
 
 ## Pixel comparison
 

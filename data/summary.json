@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T06:16:44.135638+00:00",
+  "generated_at": "2026-09-14T07:07:19.088115+00:00",
   "thorvg": {
     "version": "installed ThorVG",
     "commit": null,
@@ -19,8 +19,9 @@
       "track": "conformance",
       "spec": "SVG 2",
       "total": 251,
-      "pass": 111,
-      "fail": 140,
+      "pass": 99,
+      "fail": 152,
+      "skip": 0,
       "index": "corpora/wpt-svg2-reftests/README.md",
       "revision": "987a2d0c1a45f1a193f1f05d9508c4efc307c3bf"
     },
@@ -30,8 +31,9 @@
       "track": "advisory",
       "spec": "SVG Tiny 1.2",
       "total": 207,
-      "pass": 0,
-      "fail": 207,
+      "pass": 18,
+      "fail": 185,
+      "skip": 4,
       "index": "corpora/w3c-svg-tiny-1.2/README.md",
       "revision": "2008-09-12 archive (sha256: 2203d6f44178)"
     },
@@ -41,8 +43,9 @@
       "track": "diagnostic",
       "spec": "Static SVG",
       "total": 1679,
-      "pass": 603,
-      "fail": 1076,
+      "pass": 643,
+      "fail": 1033,
+      "skip": 3,
       "index": "corpora/resvg-test-suite/README.md",
       "revision": "d8e064337faf01bc5a9579187a56dbdbe3eacc72"
     }

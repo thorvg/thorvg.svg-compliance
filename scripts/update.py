@@ -306,7 +306,34 @@ def prepare_corpora(suites, sources):
     metadata.append({**suite, "revision": revision, "index": f"corpora/{suite['id']}/README.md"})
 
     (destination / "index.json").write_text(json.dumps(metadata, indent=2) + "\n")
+    apply_baselines(records, metadata)
     return destination, records, metadata
+
+
+def apply_baselines(records, metadata):
+    manifest = ROOT / "baselines/index.json"
+    if not manifest.exists():
+        return
+    baselines = json.loads(manifest.read_text())
+    revisions = {suite["id"]: suite["revision"] for suite in metadata}
+    for record in records:
+        key = f"{record['suite']}/{record['test']}"
+        baseline = baselines["tests"].get(key)
+        if baseline is None:
+            continue
+        if (revisions[record["suite"]] != baselines["revisions"][record["suite"]]
+                or sha256(record["_source_path"]) != baseline["source_sha256"]):
+            raise RuntimeError(f"Chrome baseline needs review after source update: {key}")
+        reference = ROOT / baseline["image"]
+        if image_size(reference) != tuple(record["resolution"]):
+            raise RuntimeError(f"Chrome baseline dimension mismatch: {key}")
+        record.pop("_reference_svg", None)
+        record["_reference_path"] = reference
+        record["reference_image"] = baseline["image"]
+        record["reference_renderer"] = f"Chrome {baselines['chrome_version']} / Skia {baselines['skia_revision'][:12]}"
+        if "suitability" in baseline:
+            record["baseline_suitability"] = baseline["suitability"]
+            record["baseline_reason"] = baseline["reason"]
 
 
 def thorvg_info(path):
@@ -510,6 +537,9 @@ def finalize(records, suites, corpora, tool):
             status, issue, reason = visual_status, ("none" if visual_status == "PASS" else "visual-mismatch"), ("visual-match" if visual_status == "PASS" else "visual-diff")
             rendered_url = f"assets/rendered/{record['suite']}/{record['_key']}.png"
             diff_url = f"assets/diff/{record['suite']}/{record['_key']}.png"
+        if record.get("baseline_suitability") == "unsuitable":
+            status, visual_status, issue = "SKIP", "SKIP", "unsuitable-baseline"
+            reason = record["baseline_reason"]
         item = {key: value for key, value in record.items() if not key.startswith("_") and key != "resolution"}
         item.update(metrics)
         item.update({
@@ -526,7 +556,7 @@ def write_data(records, suites, metadata, thorvg):
     data.mkdir()
     records.sort(key=lambda row: (row["suite"], row["test"]))
     (data / "results.json").write_text(json.dumps(records, separators=(",", ":")) + "\n")
-    fields = ["suite", "track", "test", "title", "feature", "elements", "status", "visual_status", "issue_type", "reason", "changed_ratio", "content_changed_ratio", "mae", "source", "reference_image", "rendered_image", "diff_image", "upstream"]
+    fields = ["suite", "track", "test", "title", "feature", "elements", "status", "visual_status", "issue_type", "reason", "changed_ratio", "content_changed_ratio", "mae", "source", "reference_image", "reference_renderer", "baseline_suitability", "baseline_reason", "rendered_image", "diff_image", "upstream"]
     with (data / "results.csv").open("w", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields, extrasaction="ignore", lineterminator="\n")
         writer.writeheader()
@@ -540,6 +570,7 @@ def write_data(records, suites, metadata, thorvg):
         summaries.append({
             "id": suite["id"], "name": suite["name"], "track": suite["track"], "spec": suite["spec"],
             "total": len(selected), "pass": statuses["PASS"], "fail": statuses["FAIL"],
+            "skip": statuses["SKIP"],
             "index": metadata_by_id[suite["id"]]["index"],
             "revision": metadata_by_id[suite["id"]]["revision"],
         })
@@ -568,6 +599,7 @@ def write_corpus_index(metadata, summary):
         "- **WPT** is the primary conformance track. Only static SVG-to-SVG equality reftests are indexed. Test and reference are rendered by the same ThorVG commit.",
         "- **W3C SVG Tiny 1.2** is advisory. The 207 static files are copied unmodified; animation, script, handler, and multimedia files are excluded. W3C permits label-text variation; this report compares all selected files against the reference PNGs.",
         "- **resvg-test-suite** is diagnostic rather than normative. Its upstream PNGs are useful cross-renderer references. Font-sensitive and undefined-behavior cases use the same visual thresholds as other tests.",
+        "- **Chrome/Skia overrides:** Cases listed in [`baselines/index.json`](baselines/index.json) use the versioned Chrome test PNG instead of the default reference above. These snapshots measure browser compatibility, including formerly undefined cases; they are not normative SVG references. See [`baselines/README.md`](baselines/README.md) for the renderer and capture conditions.",
         "", "## Pixel comparison", "",
         f"Both images are composited on white and blurred by {CONFIG['comparison']['blur_radius']} px before comparison. Pixels whose largest RGB-channel delta is at most {CONFIG['comparison']['channel_delta']} are ignored. Each suite additionally declares MAE, whole-image changed-ratio, and content-only changed-ratio limits in [`config/suites.json`](config/suites.json).",
         "", "## Licensing", "",

@@ -1,5 +1,6 @@
 import importlib.util
 import io
+import json
 import subprocess
 import sys
 import tempfile
@@ -18,6 +19,66 @@ SPEC.loader.exec_module(update)
 
 
 class UpdateTest(unittest.TestCase):
+    def test_chrome_baseline_survives_reference_rendering_and_rejects_stale_sources(self):
+        suite = next(s for s in update.CONFIG["suites"] if s["id"] == "wpt-svg2-reftests")
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "test.svg"
+            source.write_text('<svg xmlns="http://www.w3.org/2000/svg"/>')
+            image = root / "baselines/test.skia-123.png"
+            image.parent.mkdir()
+            Image.new("RGB", (10, 10), "black").save(image)
+            metadata = [{"id": suite["id"], "revision": "pinned"}]
+            (image.parent / "index.json").write_text(json.dumps({
+                "chrome_version": "153", "skia_revision": "123",
+                "revisions": {suite["id"]: "pinned"},
+                "tests": {f"{suite['id']}/test.svg": {
+                    "image": "baselines/test.skia-123.png", "source_sha256": update.sha256(source),
+                    "suitability": "suitable", "reason": "Repeated Chrome captures agree.",
+                }},
+            }))
+            record = {
+                "suite": suite["id"], "test": "test.svg", "_key": "test", "resolution": [10, 10], "elements": [],
+                "_source_path": source, "_reference_svg": root / "ref.svg",
+            }
+
+            def render(requests, tool, environment):
+                self.assertEqual(list(requests), [(str(source), (10, 10))])
+                for destinations in requests.values():
+                    for destination in destinations:
+                        destination.parent.mkdir(parents=True, exist_ok=True)
+                        Image.new("RGB", (10, 10), "black").save(destination)
+                return {}
+
+            with patch.object(update, "ROOT", root), patch.object(update, "CACHE", root / "cache"):
+                update.apply_baselines([record], metadata)
+                with patch.object(update, "render_requests", render):
+                    _, results = update.finalize([record], {suite["id"]: suite}, root, None)
+                self.assertEqual(results[0]["status"], "PASS")
+                self.assertEqual(results[0]["reference_image"], "baselines/test.skia-123.png")
+                self.assertEqual(results[0]["reference_renderer"], "Chrome 153 / Skia 123")
+                self.assertEqual(results[0]["baseline_suitability"], "suitable")
+                record.update(baseline_suitability="unsuitable", baseline_reason="Unstable recursive rendering.")
+                with patch.object(update, "render_requests", render):
+                    _, skipped = update.finalize([record], {suite["id"]: suite}, root, None)
+                self.assertEqual(skipped[0]["status"], "SKIP")
+                self.assertEqual(skipped[0]["visual_status"], "SKIP")
+                self.assertEqual(skipped[0]["issue_type"], "unsuitable-baseline")
+                self.assertEqual(skipped[0]["reason"], "Unstable recursive rendering.")
+                self.assertEqual(skipped[0]["mae"], 0)
+                _, summary = update.write_data(skipped, {suite["id"]: suite}, [
+                    {**metadata[0], "index": "README.md"},
+                ], {})
+                self.assertEqual([summary["suites"][0][k] for k in ("total", "pass", "fail", "skip")], [1, 0, 0, 1])
+                with self.assertRaisesRegex(RuntimeError, "needs review"):
+                    update.apply_baselines([record], [{"id": suite["id"], "revision": "new"}])
+                record["resolution"] = [20, 20]
+                with self.assertRaisesRegex(RuntimeError, "dimension mismatch"):
+                    update.apply_baselines([record], metadata)
+                source.write_text("changed")
+                with self.assertRaisesRegex(RuntimeError, "needs review"):
+                    update.apply_baselines([record], metadata)
+
     def test_installed_converter_skips_source_fetch_and_build(self):
         with tempfile.TemporaryDirectory() as directory:
             tool = Path(directory) / "tvg-svg2png"

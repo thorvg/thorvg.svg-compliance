@@ -79,9 +79,11 @@ Other options:
 | resvg-test-suite | Diagnostic | Upstream reference PNGs |
 
 `PASS` means the rendering meets the suite's visual thresholds. `FAIL` means a
-visual mismatch or a rendering/loading error. Pass rates include all indexed
-tests. The three tracks measure different things; they do not form a single SVG
+visual mismatch or a rendering/loading error. `SKIP` marks an unsuitable baseline,
+with the reason shown in the report. Pass rates use `PASS + FAIL`, excluding `SKIP`. The three tracks measure different things; they do not form a single SVG
 compliance percentage.
+
+See the [baseline assessment](baselines/ASSESSMENT.md) for reviewed images and reasons.
 
 See [CORPORA.md](CORPORA.md) for selection rules, comparison methods, and licenses,
 or [config/suites.json](config/suites.json) for thresholds.
