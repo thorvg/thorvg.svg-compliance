@@ -7,7 +7,7 @@ This is the human-readable index for every vendored test set. The full machine i
 | Set | Track | Indexed | Source revision | License |
 |---|---:|---:|---|---|
 | [resvg independent renderer test suite](corpora/resvg-test-suite/README.md) | diagnostic | 1679 | `d8e064337faf01bc5a9579187a56dbdbe3eacc72` | [MIT](https://github.com/linebender/resvg-test-suite/blob/main/LICENSE) |
-| [WPT SVG2 static reftests](corpora/wpt-svg2-reftests/README.md) | conformance | 251 | `17d68806f7be968ed38196f068db03fb3a5dff2a` | [BSD-3-Clause](https://github.com/web-platform-tests/wpt/blob/master/LICENSE.md) |
+| [WPT SVG2 static reftests](corpora/wpt-svg2-reftests/README.md) | conformance | 251 | `987a2d0c1a45f1a193f1f05d9508c4efc307c3bf` | [BSD-3-Clause](https://github.com/web-platform-tests/wpt/blob/master/LICENSE.md) |
 | [W3C SVG Tiny 1.2 static subset](corpora/w3c-svg-tiny-1.2/README.md) | advisory | 207 | `2008-09-12 archive (sha256: 2203d6f44178)` | [W3C Document License (1999)](https://www.w3.org/Consortium/Legal/1999/copyright-documents-19990405) |
 
 ## Selection and reference policy

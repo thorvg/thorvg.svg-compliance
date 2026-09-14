@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-09-07T15:17:59.695626+00:00",
+  "generated_at": "2026-09-14T06:16:44.135638+00:00",
   "thorvg": {
-    "commit": "3b567e7660d907591c47b1141993c7a263af5245",
-    "version": "3b567e76",
+    "version": "installed ThorVG",
+    "commit": null,
+    "commit_url": null,
     "dirty": false,
-    "commit_url": "https://github.com/thorvg/thorvg/commit/3b567e7660d907591c47b1141993c7a263af5245",
-    "cli_tools_commit": "8e45bdf62a3c5f4aac575b34ead329ed7d36abb9"
+    "converter_path": "/usr/local/bin/tvg-svg2png",
+    "converter_sha256": "bfc6fcdf50352a3f6b053b12e5fcf73262412f95e1c2229af52bcb584f02c0b3"
   },
   "comparison": {
     "blur_radius": 0.6,
@@ -18,10 +19,10 @@
       "track": "conformance",
       "spec": "SVG 2",
       "total": 251,
-      "pass": 135,
-      "fail": 116,
+      "pass": 111,
+      "fail": 140,
       "index": "corpora/wpt-svg2-reftests/README.md",
-      "revision": "17d68806f7be968ed38196f068db03fb3a5dff2a"
+      "revision": "987a2d0c1a45f1a193f1f05d9508c4efc307c3bf"
     },
     {
       "id": "w3c-svg-tiny-1.2",
@@ -40,8 +41,8 @@
       "track": "diagnostic",
       "spec": "Static SVG",
       "total": 1679,
-      "pass": 626,
-      "fail": 1053,
+      "pass": 603,
+      "fail": 1076,
       "index": "corpora/resvg-test-suite/README.md",
       "revision": "d8e064337faf01bc5a9579187a56dbdbe3eacc72"
     }

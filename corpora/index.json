@@ -34,7 +34,7 @@
     "max_mae": 1.0,
     "max_changed_ratio": 0.005,
     "max_content_changed_ratio": 0.02,
-    "revision": "17d68806f7be968ed38196f068db03fb3a5dff2a",
+    "revision": "987a2d0c1a45f1a193f1f05d9508c4efc307c3bf",
     "index": "corpora/wpt-svg2-reftests/README.md"
   },
   {
