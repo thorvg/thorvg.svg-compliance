@@ -10,7 +10,8 @@
 </p>
 
 Check how [ThorVG](https://github.com/thorvg/thorvg) renders SVGs from public test
-suites. The web report shows pass/fail results, reference images, and visual diffs.
+suites against reference images and Chrome/Skia. The web report shows test
+results, reference images, and visual diffs.
 
 ## View the report
 
@@ -41,7 +42,10 @@ This installs Meson, Ninja, and Pillow, then fetches ThorVG's latest `main` and 
 test suites into `.cache/`. The updater builds ThorVG and its SVG converter
 (fetching [CLI Tools](https://github.com/thorvg/thorvg.cli-tools) when needed),
 then replaces `corpora/`, `assets/`, `data/`, and `CORPORA.md` with updated results.
-Refresh the report to see them.
+The updater reuses the checked-in Chrome/Skia baselines. If corpus revisions or
+source hashes no longer match [baselines/index.json](baselines/index.json),
+generation stops until the baselines are reviewed. Use `--offline` to reuse
+matching source caches.
 
 To test a local ThorVG checkout:
 
@@ -74,13 +78,18 @@ Other options:
 
 | Test suite | Track | Compared against |
 |------------|-------|------------------|
-| WPT static SVG reftests | Conformance | Reference SVGs rendered by the same ThorVG build |
+| WPT static SVG reftests | Conformance | ThorVG-rendered WPT reference SVGs, with Chrome/Skia overrides |
 | W3C SVG Tiny 1.2 static subset | Advisory | Chrome/Skia output from SVGs with only the Revision text element removed |
-| resvg-test-suite | Diagnostic | Upstream reference PNGs |
+| resvg-test-suite | Diagnostic | Upstream PNGs, with Chrome/Skia overrides |
+
+Active Chrome/Skia overrides are listed in [baselines/index.json](baselines/index.json).
+W3C Tiny removes only the Revision text element before both renderers run; the
+entire image is compared.
 
 `PASS` means the rendering meets the suite's visual thresholds. `FAIL` means a
 visual mismatch or a rendering/loading error. `SKIP` marks an unsuitable baseline,
-with the reason shown in the report. Pass rates use `PASS + FAIL`, excluding `SKIP`. The three tracks measure different things; they do not form a single SVG
+with the reason shown in the report. Pass rates use `PASS + FAIL`, excluding `SKIP`.
+The three tracks measure different things; they do not form a single SVG
 compliance percentage.
 
 See the [baseline assessment](baselines/ASSESSMENT.md) for reviewed images and reasons.
@@ -98,5 +107,5 @@ After installing the dependencies above, run the updater checks:
 python3 -m unittest scripts/test_update.py
 ```
 
-The [GitHub Actions workflow](.github/workflows/update-report.yml) regenerates and
-commits results weekly or on manual dispatch.
+The [GitHub Actions workflow](.github/workflows/update-report.yml) runs weekly or
+on manual dispatch; the same baseline validation applies.
