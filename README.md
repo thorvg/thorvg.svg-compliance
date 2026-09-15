@@ -15,97 +15,48 @@ results, reference images, and visual diffs.
 
 ## View the report
 
-Results are included in this repository. From the repository root, start a local
-server with Python 3:
+Results are checked in. Run `python3 -m http.server 8000` from the repository root
+and open [localhost:8000](http://localhost:8000).
 
-```bash
-python3 -m http.server 8000
-```
+## Update the report
 
-Open [http://localhost:8000](http://localhost:8000) to search, filter, and compare
-results. No ThorVG build is needed to view the report.
-
-## Regenerate the report
-
-Requires Python 3.12+, Git, a C++ compiler, pkg-config, FreeType, and Fontconfig.
-On Ubuntu 24.04, run from the repository root:
+On Ubuntu 24.04 (Python 3.12+):
 
 ```bash
 sudo apt-get update
 sudo apt-get install -y git g++ pkg-config python3 meson ninja-build python3-pil \
   libfreetype-dev libfontconfig1-dev
-
 python3 scripts/update.py
 ```
 
-This installs Meson, Ninja, and Pillow, then fetches ThorVG's latest `main` and the
-test suites into `.cache/`. The updater builds ThorVG and its SVG converter
-(fetching [CLI Tools](https://github.com/thorvg/thorvg.cli-tools) when needed),
-then replaces `corpora/`, `assets/`, `data/`, and `CORPORA.md` with updated results.
-The updater reuses the checked-in Chrome/Skia baselines. If corpus revisions or
-source hashes no longer match [baselines/index.json](baselines/index.json),
-generation stops until the baselines are reviewed. Use `--offline` to reuse
-matching source caches.
-
-To test a local ThorVG checkout:
+The updater fetches and builds ThorVG and its converter in `.cache/`, then updates
+the corpora and report. Changed corpus revisions or source hashes require updated
+snapshots and [baseline metadata](baselines/index.json) before generation can finish.
 
 ```bash
 python3 scripts/update.py --thorvg /path/to/thorvg
-```
-
-To use an installed converter with cached corpora:
-
-```bash
 python3 scripts/update.py --svg2png /usr/local/bin/tvg-svg2png --offline
+python3 scripts/update.py --help
 ```
 
-`--svg2png` skips ThorVG and CLI Tools fetching and building. It cannot be combined
-with `--thorvg` or `--thorvg-ref`. The report records the converter's absolute path
-and SHA-256 instead of a ThorVG source commit. `--offline` requires cached corpora.
+`--offline` requires cached sources. `--svg2png` uses an installed converter and
+skips building; keep its CLI Tools `fonts/PublicSans-Regular.ttf` available.
+Font-family matching and CJK output depend on additional converter font support.
 
-The local CLI Tools build loads `fonts/PublicSans-Regular.ttf` from its source
-checkout, so keep that file available after installing the executable. It provides
-a Latin text fallback; the updater's Fontconfig environment does not make this
-converter load the corpus fonts. Exact font-family matching and Hangul/CJK output
-require additional font support.
+## Results
 
-Other options:
+- **PASS / FAIL:** visual thresholds met / mismatch or rendering error.
+- **SKIP:** unsuitable baseline; excluded from `PASS / (PASS + FAIL)`.
+- Suites use different references; the rates are not a combined SVG compliance score.
 
-- `--thorvg-ref REF`: fetch a branch, tag, or commit instead of `main`; used without `--thorvg`.
-- `--offline`: reuse cached sources without fetching; test suites and any required CLI Tools must already be cached.
+See [test sources and comparison rules](CORPORA.md) and [thresholds](config/suites.json).
+Download [JSON](data/results.json) or [CSV](data/results.csv);
+[summary.json](data/summary.json) records counts and revisions.
 
-## Read the results
+## Maintenance
 
-| Test suite | Track | Compared against |
-|------------|-------|------------------|
-| WPT static SVG reftests | Conformance | ThorVG-rendered WPT reference SVGs, with Chrome/Skia overrides |
-| W3C SVG Tiny 1.2 static subset | Advisory | Chrome/Skia output from SVGs with only the Revision text element removed |
-| resvg-test-suite | Diagnostic | Upstream PNGs, with Chrome/Skia overrides |
+Run `python3 -m unittest scripts/test_update.py` for updater checks.
+[GitHub Actions](.github/workflows/update-report.yml) updates the report weekly or on manual dispatch.
 
-Active Chrome/Skia overrides are listed in [baselines/index.json](baselines/index.json).
-W3C Tiny removes only the Revision text element before both renderers run; the
-entire image is compared.
-
-`PASS` means the rendering meets the suite's visual thresholds. `FAIL` means a
-visual mismatch or a rendering/loading error. `SKIP` marks an unsuitable baseline,
-with the reason shown in the report. Pass rates use `PASS + FAIL`, excluding `SKIP`.
-The three tracks measure different things; they do not form a single SVG
-compliance percentage.
-
-See the [baseline assessment](baselines/ASSESSMENT.md) for reviewed images and reasons.
-
-See [CORPORA.md](CORPORA.md) for selection rules, comparison methods, and licenses,
-or [config/suites.json](config/suites.json) for thresholds.
-Download the [summary](data/summary.json) or per-test results as
-[JSON](data/results.json) or [CSV](data/results.csv).
-
-## Development
-
-After installing the dependencies above, run the updater checks:
-
-```bash
-python3 -m unittest scripts/test_update.py
-```
-
-The [GitHub Actions workflow](.github/workflows/update-report.yml) runs weekly or
-on manual dispatch; the same baseline validation applies.
+Project code is [MIT licensed](LICENSE); test assets and fonts retain their
+[upstream licenses](CORPORA.md).

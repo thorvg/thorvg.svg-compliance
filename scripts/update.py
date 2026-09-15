@@ -194,23 +194,6 @@ def base_record(suite, relative, source, source_url, title_text, source_elements
     }
 
 
-def suite_readme(suite, revision, count):
-    return f"""# {suite['name']}
-
-- Track: `{suite['track']}`
-- Specification/profile: {suite['spec']}
-- Indexed tests: {count}
-- Upstream: {suite['source_url']}
-- Upstream revision: `{revision}`
-- License: [{suite['license']}]({suite['license_url']})
-- Selection: {suite['selection']}
-- Reference oracle: {suite['oracle']}
-
-{"The Revision text element is removed from the W3C SVG inputs before both Chrome and ThorVG rendering." if suite['id'] == 'w3c-svg-tiny-1.2' else "The files are copied without semantic modification."} See [../../CORPORA.md](../../CORPORA.md)
-for the comparison methodology and licensing notes.
-"""
-
-
 def prepare_corpora(suites, sources):
     destination = CACHE / "corpora-next"
     shutil.rmtree(destination, ignore_errors=True)
@@ -244,8 +227,7 @@ def prepare_corpora(suites, sources):
     copy_tree(upstream / "resources", target / "resources")
     copy_tree(upstream / "fonts", target / "fonts")
     copy_file(upstream / "LICENSE", target / "LICENSE")
-    (target / "README.md").write_text(suite_readme(suite, revision, sum(r["suite"] == suite["id"] for r in records)))
-    metadata.append({**suite, "revision": revision, "index": f"corpora/{suite['id']}/README.md"})
+    metadata.append({**suite, "revision": revision, "index": "CORPORA.md"})
 
     suite = suites["wpt-svg2-reftests"]
     upstream = sources[suite["id"]]
@@ -253,7 +235,6 @@ def prepare_corpora(suites, sources):
     target = destination / suite["id"]
     copy_tree(upstream / "svg", target / "svg")
     copy_file(upstream / "LICENSE.md", target / "LICENSE.md")
-    start = len(records)
     for svg, reference in wpt_pairs(upstream / "svg"):
         relative = svg.relative_to(upstream / "svg")
         reference_relative = reference.relative_to(upstream / "svg")
@@ -271,15 +252,12 @@ def prepare_corpora(suites, sources):
             "_reference_svg": target / "svg" / reference_relative,
         })
         records.append(record)
-    count = len(records) - start
-    (target / "README.md").write_text(suite_readme(suite, revision, count) + "\nThe complete upstream `svg/` subtree is retained so selected reftests keep their relative dependencies.\n")
-    metadata.append({**suite, "revision": revision, "index": f"corpora/{suite['id']}/README.md"})
+    metadata.append({**suite, "revision": revision, "index": "CORPORA.md"})
 
     suite = suites["w3c-svg-tiny-1.2"]
     upstream = sources[suite["id"]]
     revision = "2008-09-12 archive (sha256: " + suite["archive_sha256"][:12] + ")"
     target = destination / suite["id"]
-    start = len(records)
     for svg in sorted((upstream / "svg").glob("*.svg")):
         text = read_svg(svg)
         if W3C_DYNAMIC.search(text):
@@ -308,9 +286,7 @@ def prepare_corpora(suites, sources):
     copy_tree(upstream / "resources", target / "resources")
     copy_tree(upstream / "images", target / "images")
     copy_file(upstream / "images/copyright-documents-19990405.html", target / "LICENSE.html")
-    count = len(records) - start
-    (target / "README.md").write_text(suite_readme(suite, revision, count))
-    metadata.append({**suite, "revision": revision, "index": f"corpora/{suite['id']}/README.md"})
+    metadata.append({**suite, "revision": revision, "index": "CORPORA.md"})
 
     (destination / "index.json").write_text(json.dumps(metadata, indent=2) + "\n")
     apply_baselines(records, metadata)
@@ -590,28 +566,18 @@ def write_data(records, suites, metadata, thorvg):
     return data, summary
 
 
-def write_corpus_index(metadata, summary):
-    counts = {item["id"]: item for item in summary["suites"]}
+def write_corpus_index(metadata):
     lines = [
-        "# SVG corpus index", "", "This is the human-readable index for every vendored test set. The full machine index is",
-        "[`data/results.json`](data/results.json), and the spreadsheet-friendly index is",
-        "[`data/results.csv`](data/results.csv).", "", "| Set | Track | Indexed | Source revision | License |",
-        "|---|---:|---:|---|---|",
+        "# Test corpora", "",
+        "| Source | Track | Selection | Reference | License |",
+        "|---|---|---|---|---|",
     ]
     for suite in metadata:
-        count = counts[suite["id"]]["total"]
-        lines.append(f"| [{suite['name']}]({suite['index']}) | {suite['track']} | {count} | `{suite['revision']}` | [{suite['license']}]({suite['license_url']}) |")
+        lines.append(f"| [{suite['name']}]({suite['source_url']}) | {suite['track']} | {suite['selection']} | {suite['oracle']} | [{suite['license']}]({suite['license_url']}) |")
     lines += [
-        "", "## Selection and reference policy", "",
-        "- **WPT** is the primary conformance track. Only static SVG-to-SVG equality reftests are indexed. Test and reference are rendered by the same ThorVG commit.",
-        "- **W3C SVG Tiny 1.2** is advisory. Animation, script, handler, and multimedia files are excluded. Only the Revision text element is removed from all 207 selected SVGs before generating both Chrome baselines and ThorVG output. The entire image is compared, including content behind the former label; no rectangle is masked or cropped.",
-        "- **resvg-test-suite** is diagnostic rather than normative. Its upstream PNGs are useful cross-renderer references. Font-sensitive and undefined-behavior cases use the same visual thresholds as other tests.",
-        "- **Chrome/Skia overrides:** Cases listed in [`baselines/index.json`](baselines/index.json) use the versioned Chrome test PNG instead of the default reference above. These snapshots measure browser compatibility, including formerly undefined cases; they are not normative SVG references. See [`baselines/README.md`](baselines/README.md) for the renderer and capture conditions.",
-        "", "## Pixel comparison", "",
-        f"Both images are composited on white and blurred by {CONFIG['comparison']['blur_radius']} px before comparison. Pixels whose largest RGB-channel delta is at most {CONFIG['comparison']['channel_delta']} are ignored. Each suite additionally declares MAE, whole-image changed-ratio, and content-only changed-ratio limits in [`config/suites.json`](config/suites.json).",
-        "", "## Licensing", "",
-        "Each corpus directory contains the upstream license/notice. Bundled resvg fonts retain their individual license files.",
-        "",
+        "", "Cases in [baselines/index.json](baselines/index.json) use Chrome screenshots instead of the default reference.",
+        "", "Images are composited on white and blurred before comparing RGB differences. Blur, channel tolerance, MAE and changed-pixel limits are set in [config/suites.json](config/suites.json).",
+        "", "Counts and source revisions are in [data/summary.json](data/summary.json). Bundled fonts retain their individual license files.", "",
     ]
     temporary = ROOT / ".CORPORA.md.next"
     temporary.write_text("\n".join(lines))
@@ -656,11 +622,11 @@ def main():
     }
     corpora, records, metadata = prepare_corpora(suites, sources)
     assets, records = finalize(records, suites, corpora, tool)
-    data, summary = write_data(records, suites, metadata, thorvg)
+    data, _ = write_data(records, suites, metadata, thorvg)
     replace_directory(corpora, ROOT / "corpora")
     replace_directory(assets, ROOT / "assets")
     replace_directory(data, ROOT / "data")
-    write_corpus_index(metadata, summary)
+    write_corpus_index(metadata)
     baseline = thorvg["commit"][:12] if thorvg["commit"] else thorvg["converter_path"]
     print(f"Published {len(records)} indexed SVG results for {thorvg['version']} ({baseline}).")
 
