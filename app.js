@@ -16,3 +16,4 @@ function card(r){const node=$('card-template').content.firstElementChild.cloneNo
 
 // Deep link: #<suite>/<test path or unique file name>.
 function openLink(){let hash;try{hash=decodeURIComponent(location.hash.slice(1))}catch{return}const cut=hash.indexOf('/'),suite=hash.slice(0,cut),path=hash.slice(cut+1),rows=all.filter(r=>r.suite===suite),named=rows.filter(r=>r.test.split('/').pop()===path),r=rows.find(r=>r.test===path)||(named.length===1&&named[0]);if(!r)return;$('suite-filter').value=suite;$('search').value=r.test;applyFilters();const node=[...$('results').children].find(n=>n.dataset.test===r.test);node.classList.add('target');node.scrollIntoView({block:'center'})}
+window.addEventListener('hashchange',openLink);
