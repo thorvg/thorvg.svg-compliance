@@ -2,3 +2,4 @@
 .more[hidden]{display:none}
 
 .card.skip{border-left-color:var(--muted)}.skip .status{background:var(--muted)}
+.card h3 a{color:inherit;text-decoration:none}.card h3 a:hover{text-decoration:underline}.card.target{outline:3px solid var(--accent);outline-offset:2px}
