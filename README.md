@@ -30,8 +30,10 @@ python3 scripts/update.py
 ```
 
 The updater fetches and builds ThorVG and its converter in `.cache/`, then updates
-the corpora and report. Changed corpus revisions or source hashes require updated
-snapshots and [baseline metadata](baselines/index.json) before generation can finish.
+the report using corpus revisions pinned in [config/suites.json](config/suites.json)
+to match the reviewed [baseline metadata](baselines/index.json). Weekly runs update
+ThorVG against these fixed corpora. To update a corpus, review its Chrome snapshots
+and source hashes and update the baseline metadata and corpus pin together.
 
 ```bash
 python3 scripts/update.py --thorvg /path/to/thorvg

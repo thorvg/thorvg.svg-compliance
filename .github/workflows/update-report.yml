@@ -29,6 +29,8 @@ jobs:
       - name: Install build dependencies
         run: sudo apt-get update && sudo apt-get install -y g++ pkg-config libfreetype-dev libfontconfig1-dev
       - run: pip install -r requirements.txt
+      - name: Check updater and baseline pins
+        run: python3 -m unittest scripts/test_update.py
       - name: Regenerate report
         run: python3 scripts/update.py --thorvg-ref "${{ inputs.thorvg_ref || 'main' }}"
       - name: Publish changed results

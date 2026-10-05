@@ -19,6 +19,13 @@ SPEC.loader.exec_module(update)
 
 
 class UpdateTest(unittest.TestCase):
+    def test_corpus_refs_match_reviewed_baselines(self):
+        baselines = json.loads((update.ROOT / "baselines/index.json").read_text())
+        for suite in update.CONFIG["suites"]:
+            if "source_ref" in suite and suite["id"] in baselines["revisions"]:
+                with self.subTest(suite=suite["id"]):
+                    self.assertEqual(suite["source_ref"], baselines["revisions"][suite["id"]])
+
     def test_remove_only_w3c_revision_text(self):
         # Keep overlapping geometry, unrelated text, namespaces and CRLF intact.
         before = b'<svg xmlns="http://www.w3.org/2000/svg">\r\n<path d="M0 320L480 340"/>\r\n'
