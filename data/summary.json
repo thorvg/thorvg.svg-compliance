@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-14T08:01:48.430140+00:00",
+  "generated_at": "2026-10-05T08:31:43.830418+00:00",
   "thorvg": {
-    "commit": "a3a2b79ffef74d825e677998ef7c4cba8b55881e",
-    "version": "a3a2b79f",
+    "commit": "9279b8b175ea45190b6e5b9deb3aeab236db7dcb",
+    "version": "9279b8b1",
     "dirty": false,
-    "commit_url": "https://github.com/thorvg/thorvg/commit/a3a2b79ffef74d825e677998ef7c4cba8b55881e",
-    "cli_tools_commit": "8e45bdf62a3c5f4aac575b34ead329ed7d36abb9"
+    "commit_url": "https://github.com/thorvg/thorvg/commit/9279b8b175ea45190b6e5b9deb3aeab236db7dcb",
+    "cli_tools_commit": "4267a79a2f9e4df0a6a3905f49b5d0414d8a472a"
   },
   "comparison": {
     "blur_radius": 0.6,
@@ -18,8 +18,8 @@
       "track": "conformance",
       "spec": "SVG 2",
       "total": 251,
-      "pass": 106,
-      "fail": 145,
+      "pass": 108,
+      "fail": 143,
       "skip": 0,
       "index": "CORPORA.md",
       "revision": "987a2d0c1a45f1a193f1f05d9508c4efc307c3bf"
@@ -30,8 +30,8 @@
       "track": "advisory",
       "spec": "SVG Tiny 1.2",
       "total": 207,
-      "pass": 45,
-      "fail": 158,
+      "pass": 46,
+      "fail": 157,
       "skip": 4,
       "index": "CORPORA.md",
       "revision": "2008-09-12 archive (sha256: 2203d6f44178)"
@@ -42,8 +42,8 @@
       "track": "diagnostic",
       "spec": "Static SVG",
       "total": 1679,
-      "pass": 672,
-      "fail": 1004,
+      "pass": 677,
+      "fail": 999,
       "skip": 3,
       "index": "CORPORA.md",
       "revision": "d8e064337faf01bc5a9579187a56dbdbe3eacc72"
