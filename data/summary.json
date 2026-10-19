@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-12T03:01:19.191461+00:00",
+  "generated_at": "2026-10-19T02:45:21.897645+00:00",
   "thorvg": {
-    "commit": "87b2684ce44bb5dce2319fb0fd09b1f8af5f6bfc",
-    "version": "87b2684c",
+    "commit": "920324543b0377d14f34ebcd561f27590ddb55de",
+    "version": "92032454",
     "dirty": false,
-    "commit_url": "https://github.com/thorvg/thorvg/commit/87b2684ce44bb5dce2319fb0fd09b1f8af5f6bfc",
-    "cli_tools_commit": "4267a79a2f9e4df0a6a3905f49b5d0414d8a472a"
+    "commit_url": "https://github.com/thorvg/thorvg/commit/920324543b0377d14f34ebcd561f27590ddb55de",
+    "cli_tools_commit": "9b1c6ab55a0a6d1a1ac18412fed67e6cdf407935"
   },
   "comparison": {
     "blur_radius": 0.6,
@@ -18,8 +18,8 @@
       "track": "conformance",
       "spec": "SVG 2",
       "total": 251,
-      "pass": 109,
-      "fail": 142,
+      "pass": 108,
+      "fail": 143,
       "skip": 0,
       "index": "CORPORA.md",
       "revision": "987a2d0c1a45f1a193f1f05d9508c4efc307c3bf"
