@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-02T02:30:54.001210+00:00",
+  "generated_at": "2026-11-09T02:30:16.376754+00:00",
   "thorvg": {
-    "commit": "31c5fa37e38f284a87ebcdf909f0e0d4a142e347",
-    "version": "31c5fa37",
+    "commit": "04c61cf43167a779e3d9b84aacb73cb39a4f47cf",
+    "version": "04c61cf4",
     "dirty": false,
-    "commit_url": "https://github.com/thorvg/thorvg/commit/31c5fa37e38f284a87ebcdf909f0e0d4a142e347",
-    "cli_tools_commit": "9b1c6ab55a0a6d1a1ac18412fed67e6cdf407935"
+    "commit_url": "https://github.com/thorvg/thorvg/commit/04c61cf43167a779e3d9b84aacb73cb39a4f47cf",
+    "cli_tools_commit": "870e337e334b0737c3e546dabb5d074c96e7f589"
   },
   "comparison": {
     "blur_radius": 0.6,
@@ -42,8 +42,8 @@
       "track": "diagnostic",
       "spec": "Static SVG",
       "total": 1679,
-      "pass": 677,
-      "fail": 999,
+      "pass": 686,
+      "fail": 990,
       "skip": 3,
       "index": "CORPORA.md",
       "revision": "d8e064337faf01bc5a9579187a56dbdbe3eacc72"
